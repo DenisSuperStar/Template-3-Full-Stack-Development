@@ -1,75 +1,184 @@
 /*Подключение шрифта Montserrat с настройками по умолчанию*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body {
-    background: #E5E5E5;
+$radius: 0 100px 500px 100px;
+$line: 2px solid #8ba4f9;
+$turn: rotate(-70deg);
+
+$radiusLogo: 0 100px 100px 0;
+$lineLogo: 2px solid #66d2ea;
+$rotation: rotate(240deg);
+
+$loginColor: #8ba4f9;
+$loginLine:2px solid #8ba4f9;
+$loginBack: #fff;
+
+$accountColor: #fff;
+$accountLine: none;
+$accountBack: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+
+@mixin space($top, $left, $bottom) {
+    margin-top: $top;
+    margin-left: $left;
+    margin-bottom: $bottom;
 }
 
-.common__block {
-    width: 1440px;
-    height: 70px;
-    background: #fff;
-    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+@mixin logo($width, $height, $fullRadius, $borderRight, $rotate, $leftSpace) {
+    width: $width;
+    height: $height;
+    border-radius: $fullRadius;
+    border-right: $borderRight;
+    transform: $rotate;
+    margin-left: $leftSpace;
+}
+
+@mixin flexible() {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.common__block_move {
-    margin-top: 140px;
-    margin-left: 50px;
-    margin-bottom: 15px;
+@mixin stylus() {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
 }
+
+@mixin button($width, $height, $color, $line, $back) {
+    width: $width;
+    height: $height;
+    color: $color;
+    border: $line;
+    background: $back;
+    border-radius: 22px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+body {
+    width: 1440px;
+    background: #E5E5E5;
+    border: 1px solid transparent;
+}
+
+.has-dist {
+    margin-right: 20px;
+}
+
+/*Стили Хедера*/
+.hat {
+    width: 1440px;
+    background: #E5E5E5;
+    &__block {
+        width: 1440px;
+        height: 70px;
+        background: #fff;
+        box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+        display: flex;
+        &_has-move {
+            @include space(140px, 50px, 15px);
+        }
+    }
+    &__logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #8ba4f9;
+        position: relative;
+        &_has-around {
+            @include space(15px, 140px, 15px);  
+        }
+    }
+    &__first {
+        @include logo(11.76px, 11.76px, $radius, $line, $turn, 7.4px);
+        margin-top: 15.29px;
+    }
+    &__last {
+        @include logo(9.12px, 9.12px, $radiusLogo, $lineLogo, $rotation, 20px);
+        position: absolute;
+        top: 14px;
+    }
+    &__logotext {
+        width: 53.19px;
+        height: 12.95px;
+        @include flexible();
+        color: #1f2041;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        overflow: hidden;
+        &_has-action {
+            @include space(28.33px, 12.5px, 28.33px);
+        }
+    }
+    &__cascade {
+        @include flexible();
+        &_has-move {
+            margin-left: 20px;
+        }
+    }
+    &__login {
+        @include button(87px, 34px, $loginColor, $loginLine, $loginBack);
+        &_has-dist {
+            margin-right: 20px;
+        }
+    }
+    &__account {
+        @include button(194px, 34px, $accountColor, $accountLine, $accountBack);
+    }
+}
+
+/*Стили меню*/
+.menu {
+    @include flexible();
+    &_has-move {
+        margin-left: 284.31px;
+    }
+    &__link {
+        display: block;
+        height: 18px;
+        @include stylus();
+        &_is-active {
+            font-weight: bold;
+            color: rgba(31, 32, 65, 0.75);
+        }
+        &_has-dist {
+            @extend .has-dist;
+        }  
+    }
+    &__dropdown {
+        display: block;
+        height: 20px;
+        &_has-dist {
+            @extend .has-dist;
+        }
+    }
+    &__button {
+        height: 18px;
+        border: none;
+        padding: 0;
+    }
+    &__text {
+        @include stylus();
+    }
+    &__dropdown-content {
+        display: none;
+    }
+    &__dropdown-item {
+        @include stylus();
+    }
+}
+
+/**/
 
 .common__block_top {
     margin-top: 40px;
-}
-
-.common__logo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #8ba4f9;
-    position: relative;
-}
-
-.common__logo_around {
-    margin-top: 15px;
-    margin-left: 140px;
-    margin-bottom: 15px;
-}
-
-.common__first {
-    border-radius: 0 100px 500px 100px;
-    border-right: 2px solid #8ba4f9;
-    width: 11.76px;
-    height: 11.76px;
-    transform: rotate(-70deg);
-    margin-top: 17.29px;
-    margin-left: 8.4px;
-}
-
-.common__last {
-    width: 9.12px;
-    height: 9.12px;
-    border-radius: 0 100px 100px 0;
-    border-right: 2px solid #66d2ea;
-    position: absolute;
-    top: 16px;
-    margin-left: 21px;
-    transform: rotate(240deg);
-}
-
-.common__logotext {
-    width: 53.19px;
-    height: 12.95px;
-    color: #1f2041;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-}
-
-.common__logotext_action {
-    margin-top: 28.33px;
-    margin-left: 12.5px;
-    margin-bottom: 28.33px;
 }
 
 .common__navbar {
@@ -194,9 +303,7 @@ body {
     font-weight: normal;
     font-size: 24px;
     line-height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexible();
 }
 
 .common__icon {
@@ -219,38 +326,10 @@ body {
     margin-bottom: 18px;
 }
 
-.common__login {
-    width: 87px;
-    height: 34px;
-    border-radius: 22px;
-    color: #8ba4f9;
-    border: 2px solid #8ba4f9;
-    background: #fff;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-}
+
 
 .common__login_dist {
     margin-right: 20px;
-}
-
-.common__account {
-    width: 194px;
-    height: 34px;
-    border-radius: 22px;
-    color: #fff;
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    border: none;
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
 }
 
 .common__vertical {

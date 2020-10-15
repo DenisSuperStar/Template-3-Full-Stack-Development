@@ -2,10 +2,22 @@
 /*Подключение шрифта Montserrat с настройками по умолчанию*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 body {
+  width: 1440px;
+  background: #E5E5E5;
+  border: 1px solid transparent;
+}
+
+.has-dist, .menu__link_has-dist, .menu__dropdown_has-dist {
+  margin-right: 20px;
+}
+
+/*Стили Хедера*/
+.hat {
+  width: 1440px;
   background: #E5E5E5;
 }
 
-.common__block {
+.hat__block {
   width: 1440px;
   height: 70px;
   background: #fff;
@@ -16,17 +28,13 @@ body {
   display: flex;
 }
 
-.common__block_move {
+.hat__block_has-move {
   margin-top: 140px;
   margin-left: 50px;
   margin-bottom: 15px;
 }
 
-.common__block_top {
-  margin-top: 40px;
-}
-
-.common__logo {
+.hat__logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -34,47 +42,179 @@ body {
   position: relative;
 }
 
-.common__logo_around {
+.hat__logo_has-around {
   margin-top: 15px;
   margin-left: 140px;
   margin-bottom: 15px;
 }
 
-.common__first {
-  border-radius: 0 100px 500px 100px;
-  border-right: 2px solid #8ba4f9;
+.hat__first {
   width: 11.76px;
   height: 11.76px;
+  border-radius: 0 100px 500px 100px;
+  border-right: 2px solid #8ba4f9;
   -webkit-transform: rotate(-70deg);
           transform: rotate(-70deg);
-  margin-top: 17.29px;
-  margin-left: 8.4px;
+  margin-left: 7.4px;
+  margin-top: 15.29px;
 }
 
-.common__last {
+.hat__last {
   width: 9.12px;
   height: 9.12px;
   border-radius: 0 100px 100px 0;
   border-right: 2px solid #66d2ea;
-  position: absolute;
-  top: 16px;
-  margin-left: 21px;
   -webkit-transform: rotate(240deg);
           transform: rotate(240deg);
+  margin-left: 20px;
+  position: absolute;
+  top: 14px;
 }
 
-.common__logotext {
+.hat__logotext {
   width: 53.19px;
   height: 12.95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1f2041;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 
-.common__logotext_action {
+.hat__logotext_has-action {
   margin-top: 28.33px;
   margin-left: 12.5px;
   margin-bottom: 28.33px;
+}
+
+.hat__cascade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hat__cascade_has-move {
+  margin-left: 20px;
+}
+
+.hat__login {
+  width: 87px;
+  height: 34px;
+  color: #8ba4f9;
+  border: 2px solid #8ba4f9;
+  background: #fff;
+  border-radius: 22px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.hat__login_has-dist {
+  margin-right: 20px;
+}
+
+.hat__account {
+  width: 194px;
+  height: 34px;
+  color: #fff;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/*Стили меню*/
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_has-move {
+  margin-left: 284.31px;
+}
+
+.menu__link {
+  display: block;
+  height: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.menu__link_is-active {
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.menu__dropdown {
+  display: block;
+  height: 20px;
+}
+
+.menu__button {
+  height: 18px;
+  border: none;
+  padding: 0;
+}
+
+.menu__text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.menu__dropdown-content {
+  display: none;
+}
+
+.menu__dropdown-item {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/**/
+.common__block_top {
+  margin-top: 40px;
 }
 
 .common__navbar {
@@ -232,39 +372,8 @@ body {
   margin-bottom: 18px;
 }
 
-.common__login {
-  width: 87px;
-  height: 34px;
-  border-radius: 22px;
-  color: #8ba4f9;
-  border: 2px solid #8ba4f9;
-  background: #fff;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-}
-
 .common__login_dist {
   margin-right: 20px;
-}
-
-.common__account {
-  width: 194px;
-  height: 34px;
-  border-radius: 22px;
-  color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  border: none;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .common__vertical {
