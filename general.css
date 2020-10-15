@@ -34,6 +34,10 @@ body {
   margin-bottom: 15px;
 }
 
+.hat__block_change-top {
+  margin-top: 40px;
+}
+
 .hat__logo {
   width: 40px;
   height: 40px;
@@ -163,6 +167,10 @@ body {
   margin-left: 284.31px;
 }
 
+.menu_has-moved {
+  margin-left: 466.31px;
+}
+
 .menu__link {
   display: block;
   height: 18px;
@@ -212,11 +220,33 @@ body {
   color: rgba(31, 32, 65, 0.5);
 }
 
-/**/
-.common__block_top {
-  margin-top: 40px;
+.menu__line {
+  width: 1px;
+  height: 30px;
+  background: rgba(31, 32, 65, 0.1);
 }
 
+.menu__line_has-dist {
+  margin: 20px 20px 20px 40px;
+}
+
+.menu__name {
+  width: 100px;
+  height: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.menu__name_has-align {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+/*Стили контентной части*/
 .common__navbar {
   background: transparent;
   display: -webkit-box;
@@ -376,32 +406,16 @@ body {
   margin-right: 20px;
 }
 
-.common__vertical {
-  width: 1px;
-  height: 30px;
-  background: rgba(31, 32, 65, 0.1);
-}
-
-.common__special {
-  width: 100px;
-  height: 18px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.common__vertical_dist {
-  margin: 20px 20px 20px 40px;
-}
-
-.common__special_align {
-  margin-top: 26px;
-  margin-bottom: 26px;
-}
-
+/*.common__special {
+    width: 100px;
+    height: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+}*/
 .common__bigbox {
   display: -webkit-box;
   display: -ms-flexbox;

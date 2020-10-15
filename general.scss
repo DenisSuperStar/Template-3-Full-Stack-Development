@@ -85,6 +85,9 @@ body {
         &_has-move {
             @include space(140px, 50px, 15px);
         }
+        &_change-top {
+            margin-top: 40px;
+        }
     }
     &__logo {
         width: 40px;
@@ -140,6 +143,9 @@ body {
     &_has-move {
         margin-left: 284.31px;
     }
+    &_has-moved {
+        margin-left: 466.31px;
+    }
     &__link {
         display: block;
         height: 18px;
@@ -173,14 +179,26 @@ body {
     &__dropdown-item {
         @include stylus();
     }
+    &__line {
+        width: 1px;
+        height: 30px;
+        background: rgba(31, 32, 65, 0.1);
+        &_has-dist {
+            margin: 20px 20px 20px 40px;
+        } 
+    }
+    &__name {
+        width: 100px;
+        height: 18px;
+        @include stylus();
+        &_has-align {
+            margin-top: 26px;
+            margin-bottom: 26px;
+        }
+    }
 }
 
-/**/
-
-.common__block_top {
-    margin-top: 40px;
-}
-
+/*Стили контентной части*/
 .common__navbar {
     background: transparent;
     display: flex;
@@ -326,19 +344,11 @@ body {
     margin-bottom: 18px;
 }
 
-
-
 .common__login_dist {
     margin-right: 20px;
 }
 
-.common__vertical {
-    width: 1px;
-    height: 30px;
-    background: rgba(31, 32, 65, 0.1);
-}
-
-.common__special {
+/*.common__special {
     width: 100px;
     height: 18px;
     font-family: "Montserrat", sans-serif;
@@ -347,16 +357,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: rgba(31, 32, 65, 0.5);
-}
-
-.common__vertical_dist {
-    margin: 20px 20px 20px 40px;
-}
-
-.common__special_align {
-    margin-top: 26px;
-    margin-bottom: 26px;
-}
+}*/
 
 .common__bigbox {
     display: flex;

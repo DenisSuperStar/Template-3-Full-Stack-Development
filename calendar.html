@@ -18,7 +18,6 @@
                     <div class="hat__logotext hat__logotext_has-action">Toxin</div>
                     <nav class="menu menu_has-move">
                         <a href="#about" class="menu__link menu__link_has-dist menu__link_is-active">О нас</a>
-                        <!-- Пункт с выпадающим меню-->
                         <div class="menu__dropdown menu__dropdown_has-dist dropdown menu__is-active is-active">
                             <div class="menu__dropdown-trigger dropdown-trigger">
                                 <button class="menu__button button" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -26,7 +25,6 @@
                                     <span class="menu__icon"></span>
                                 </button>
                             </div>
-                            <!--  -->
                             <div class="menu__dropdown-menu dropdown-menu" id="dropdown-menu" role="menu">
                                 <div class="menu__dropdown-content dropdown-content">
                                     <a href="#" class="menu__dropdown-item dropdown-item">Услуга 1</a>
@@ -35,10 +33,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Дальше -->
                         <a href="#job" class="menu__link menu__link_has-dist">Вакансии</a>
                         <a href="#news" class="menu__link menu__link_has-dist">Новости</a>
-                        <!-- Еще один пункт с выпадающим меню -->
                         <div class="menu__dropdown dropdown menu__is-active is-active">
                             <div class="menu__dropdown-trigger dropdown-trigger">
                                 <button class="menu__button button" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -46,7 +42,6 @@
                                     <span class="menu__icon menu__icon_has-local"></span>
                                 </button>
                             </div>
-                            <!--  -->
                             <div class="dropdown-menu" id="dropdown-menu" role="menu">
                                 <div class="menu__dropdown-content dropdown-content">
                                     <a href="#" class="dropdown-item">Соглашение 1</a>
@@ -55,53 +50,60 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- -->
                     </nav>
-                    <!-- Кнопки -->
                     <div class="hat__cascade hat__cascade_has-move">
                         <button class="hat__login hat__login_has-dist button">Войти</button>
                         <button class="hat__account button">Зарегистрироваться</button>
                     </div>
                 </section>
-                <section></section>
+                <section class="hat__block hat__block_has-move hat__block_change-top">
+                    <div class="hat__logo hat__logo_has-around logo">
+                        <div class="hat__first"></div>
+                        <div class="hat__last"></div>
+                    </div>
+                    <div class="hat__logotext hat__logotext_has-action">Toxin</div>
+                    <nav class="menu menu_has-moved">
+                        <a href="#about" class="menu__link menu__link_has-dist menu__link_is-active">О нас</a>
+                        <div class="menu__dropdown menu__dropdown_has-dist dropdown menu__is-active is-active">
+                            <div class="menu__dropdown-trigger dropdown-trigger">
+                                <button class="menu__button button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                    <span class="menu__text text">Услуги</span>
+                                    <span class="menu__icon"></span>
+                                </button>
+                            </div>
+                            <div class="menu__dropdown-menu dropdown-menu" id="dropdown-menu" role="menu">
+                                <div class="menu__dropdown-content dropdown-content">
+                                    <a href="#" class="menu__dropdown-item dropdown-item">Услуга 1</a>
+                                    <a href="#" class="menu__dropdown-item dropdown-item">Услуга 2</a>
+                                    <a href="#" class="menu__dropdown-item dropdown-item">Услуга 3</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#job" class="menu__link menu__link_has-dist">Вакансии</a>
+                        <a href="#news" class="menu__link menu__link_has-dist">Новости</a>
+                        <div class="menu__dropdown dropdown menu__is-active is-active">
+                            <div class="menu__dropdown-trigger dropdown-trigger">
+                                <button class="menu__button button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                    <span class="menu__text text">Соглашения</span>
+                                    <span class="menu__icon menu__icon_has-local"></span>
+                                </button>
+                            </div>
+                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                <div class="menu__dropdown-content dropdown-content">
+                                    <a href="#" class="dropdown-item">Соглашение 1</a>
+                                    <a href="#" class="dropdown-item">Соглашение 2</a>
+                                    <a href="#" class="dropdown-item">Соглашение 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="menu__line menu__line_has-dist"></div>
+                    <div class="menu__name menu__name_has-align">Юлий Цезарь</div>
+                </section>
             </header>
+            <!-- Основной контент -->
            <main class="common">
-               <div class="common__block common__block_move common__block_top">
-                   <div class="common__logo common__logo_around">
-                       <div class="common__first"></div>
-                       <div class="common__last"></div>
-                   </div>
-                   <div class="common__logotext common__logotext_action">Toxin</div>
-                   <div class="common__navbar common__navbar_remote">
-                       <a href="#about" class="common__link common__link_about common__link_is-active">О нас</a>
-                       <div class="common__dropdown dropdown">
-                           <div class="common__dropbtn">
-                               <div class="common__text common__text_service">Услуги</div>
-                               <div class="common__icon"></div>
-                           </div>
-                           <div class="common__dropdown-content">
-                               <a href="#item1" class="common__item">Услуга 1</a>
-                               <a href="#item2" class="common__item">Услуга 2</a>
-                               <a href="#item3" class="common__item">Услуга 3</a>
-                           </div>
-                       </div>
-                       <a href="#job" class="common__link common__link_job">Вакансии</a>
-                       <a href="#news" class="common__link common__link_news">Новости</a>
-                       <div class="common__dropdown dropdown">
-                           <div class="common__dropbtn">
-                               <div class="common__label common__label_agree">Соглашения</div>
-                               <div class="common__icon common__icon_agree icon"></div>
-                           </div>
-                           <div class="common__dropdown-content">
-                               <a href="#item1" class="common__item">Соглашение 1</a>
-                               <a href="#item2" class="common__item">Соглашение 2</a>
-                               <a href="#item3" class="common__item">Соглашение 3</a>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="common__vertical common__vertical_dist"></div>
-                   <div class="common__special common__special_align">Юлий Цезарь</div>
-               </div>
+               <!-- Контентная часть-->
                <div class="common__bigbox common__bigbox_column common__bigbox_offset">
                    <div class="common__col-11">
                        <div class="common__wrap-logo">
