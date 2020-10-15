@@ -1,7 +1,10 @@
 @charset "UTF-8";
 /*Подключение шрифта Montserrat с настройками по умолчанию*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-/*Не забыть в атрибут href подставить ссылки на несуществующие ресурсы*/
+/*1) Проверить работоспособность всех тегов без html*/
+/*2) Проверить все поля на переполнение*/
+/*3) Дописать семантическую разметку*/
+/*4) Взять данные у менеджера для SEO: метатег с атрибутами: keywords, description*/
 body {
   background: #E5E5E5;
   border: 1px solid transparent;
