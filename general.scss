@@ -252,9 +252,6 @@ body {
     }
     &__logo {
         @include logotype();
-        &_has-around {
-            @include space(15px, 140px, 15px);  
-        }
     }
     &__first {
         @include long();
@@ -304,20 +301,20 @@ body {
         font-size: 14px;
         line-height: 24px;
         color: rgba(31, 32, 65, 0.75);
-        &_has-devide {
-            margin-left: 140px;
-            margin-right: 40px;
-        }
+    }
+    &__col-11 {
+        margin-left: 140px;
+        margin-right: 40px;
     }
     &__col-12 {
-        margin-right: 57px;
+        margin-right: 67px;
         .general__menu-list {
             width: 130px;
             @extend .limit;
         }
     }
     &__col-13 {
-        margin-right: 92px;
+        margin-right: 100px;
         .general__menu-list {
             width: 100px;
             @extend .limit;

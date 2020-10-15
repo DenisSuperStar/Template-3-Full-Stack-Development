@@ -304,12 +304,6 @@ body {
   position: relative;
 }
 
-.general__logo_has-around {
-  margin-top: 15px;
-  margin-left: 140px;
-  margin-bottom: 15px;
-}
-
 .general__first {
   width: 11.76px;
   height: 11.76px;
@@ -392,13 +386,13 @@ body {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.general__description_has-devide {
+.general__col-11 {
   margin-left: 140px;
   margin-right: 40px;
 }
 
 .general__col-12 {
-  margin-right: 57px;
+  margin-right: 67px;
 }
 
 .general__col-12 .general__menu-list {
@@ -406,7 +400,7 @@ body {
 }
 
 .general__col-13 {
-  margin-right: 92px;
+  margin-right: 100px;
 }
 
 .general__col-13 .general__menu-list {
