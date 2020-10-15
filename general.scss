@@ -1,0 +1,545 @@
+/*Подключение шрифта Montserrat с настройками по умолчанию*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background: #E5E5E5;
+}
+
+.common__block {
+    width: 1440px;
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+    display: flex;
+}
+
+.common__block_move {
+    margin-top: 140px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+.common__block_top {
+    margin-top: 40px;
+}
+
+.common__logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #8ba4f9;
+    position: relative;
+}
+
+.common__logo_around {
+    margin-top: 15px;
+    margin-left: 140px;
+    margin-bottom: 15px;
+}
+
+.common__first {
+    border-radius: 0 100px 500px 100px;
+    border-right: 2px solid #8ba4f9;
+    width: 11.76px;
+    height: 11.76px;
+    transform: rotate(-70deg);
+    margin-top: 17.29px;
+    margin-left: 8.4px;
+}
+
+.common__last {
+    width: 9.12px;
+    height: 9.12px;
+    border-radius: 0 100px 100px 0;
+    border-right: 2px solid #66d2ea;
+    position: absolute;
+    top: 16px;
+    margin-left: 21px;
+    transform: rotate(240deg);
+}
+
+.common__logotext {
+    width: 53.19px;
+    height: 12.95px;
+    color: #1f2041;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+.common__logotext_action {
+    margin-top: 28.33px;
+    margin-left: 12.5px;
+    margin-bottom: 28.33px;
+}
+
+.common__navbar {
+    background: transparent;
+    display: flex;
+}
+
+.common__navbar_move {
+    margin-top: 26px;
+    margin-left: 284.31px;
+    margin-bottom: 26px;
+}
+
+.common__navbar_remote {
+    margin-top: 26px;
+    margin-left: 466.31px;
+    margin-bottom: 26px;
+}
+
+.common__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.common__link_is-active {
+    font-weight: bold;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.common__dropbtn {
+    position: relative;
+}
+
+.common__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+    font-family: "Montserrat", sans-serif;
+}
+
+.common__dropdown-content {
+    display: none;
+}
+
+.common__link_about {
+    width: 43px;
+    height: 18px;
+}
+
+.common__link_about,
+.common__text_service,
+.common__link_news,
+.common__link_job {
+    margin-right: 20px;
+}
+
+.common__text_service {
+    width: 50px;
+    height: 18px;
+}
+
+.common__link_job {
+    width: 72px;
+    height: 18px;
+    margin-left: 20px;
+}
+
+.common__link_news {
+    width: 62px;
+    height: 18px;
+}
+
+.common__text_agree {
+    width: 92px;
+    height: 18px;
+}
+
+.common__dropdown:hover .common__dropdown-content {
+    display: block;
+}
+
+.common__item {
+    display: block;
+    text-decoration: none;
+    height: 18px;
+    background: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.common__label {
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.common__label_agree {
+    width: 92px;
+    height: 18px;
+}
+
+.common__icon::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Pro";
+    width: 24px;
+    height: 21px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.common__icon {
+    width: 24px;
+    height: 21px;
+    position: absolute;
+    top: 0;
+    margin-left: 50px;
+}
+
+.common__icon_agree {
+    margin-left: 0;
+    right: 0;
+    margin-right: -25px;
+}
+
+.common__cascade {
+    margin-top: 18px;
+    margin-left: 40px;
+    margin-bottom: 18px;
+}
+
+.common__login {
+    width: 87px;
+    height: 34px;
+    border-radius: 22px;
+    color: #8ba4f9;
+    border: 2px solid #8ba4f9;
+    background: #fff;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.common__login_dist {
+    margin-right: 20px;
+}
+
+.common__account {
+    width: 194px;
+    height: 34px;
+    border-radius: 22px;
+    color: #fff;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.common__vertical {
+    width: 1px;
+    height: 30px;
+    background: rgba(31, 32, 65, 0.1);
+}
+
+.common__special {
+    width: 100px;
+    height: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.common__vertical_dist {
+    margin: 20px 20px 20px 40px;
+}
+
+.common__special_align {
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.common__bigbox {
+    display: flex;
+    background: #fff;
+    width: 1440px;
+}
+
+.common__bigbox_column {
+    padding-top: 104px;
+    padding-bottom: 100px
+}
+
+.common__bigbox_offset {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.common__wrap-logo {
+    display: flex;
+}
+
+.common__description {
+    width: 260px;
+    height: 72px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.common__description_action {
+    margin-left: 140px;
+    margin-right: 40px;
+}
+
+.common__menu-item {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.common__menu-item_is-active {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+}
+
+.common__menu-item_nav {
+    margin-bottom: 21px;
+}
+
+.common__menu-item_action {
+    margin-bottom: 20px;
+}
+
+.common__col-12 {
+    margin-right: 57px;
+}
+
+.common__col-13 {
+    margin-right: 92px;
+}
+
+.common__col-15 {
+    margin-left: 51px;
+}
+
+.common__menu-item_subscribe {
+    width: 260px;
+    height: 48px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.common__email {
+    width: 260px;
+    height: 44px;
+    background: #fff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.25);
+    padding: 12px 205px 8px 15px;
+}
+
+.common__placeholder {
+    width: 40px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.common__email {
+    position: relative;
+}
+
+.common__email_top {
+    margin-top: 20px;
+}
+
+.common__email-icon {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.common__email-icon::after {
+    content: "\f061";
+    font-family: "Font Awesome 5 Pro";
+    width: 44px;
+    height: 44px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.common__content-btm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    width: 1300px;
+    height: 70px;
+}
+
+.common__content-btm_offset {
+    padding-left: 140px;
+    margin-left: 50px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.common__content-btm_action {
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.common__copyright {
+    width: 370px;
+    height: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.common__socials {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 140px;
+}
+
+.common__tw::after {
+    content: "\f099";
+    font-family: "Font Awesome 5 Brands";
+    width: 24px;
+    height: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #8ba4f9;
+}
+
+.common__fb::after {
+    content: "\f082";
+    font-family: "Font Awesome 5 Brands";
+    width: 24px;
+    height: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #8ba4f9;
+}
+
+.common__ins::after {
+    content: "\f16d";
+    font-family: "Font Awesome 5 Brands";
+    width: 24px;
+    height: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8ba4f9;
+}
+
+.common__central {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 768px;
+    height: 367px;
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.common__logo_reset {
+    margin: 0;
+}
+
+.common__socials_reset {
+    margin-right: 0;
+}
+
+.common__central_place {
+    margin: 40px 336px 140px 336px;
+}
+
+.common__logotext_normalize {
+    margin: 0;
+    width: 53.19px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.common__wrap-logo_btm {
+    margin-bottom: 20px;
+}
+
+.common__copyright_down {
+    margin-bottom: 25px;
+}
