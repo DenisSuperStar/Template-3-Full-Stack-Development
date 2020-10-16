@@ -1,0 +1,14 @@
+@import './mixins.scss';
+
+$short: 284.31px;
+
+@mixin dist($dist) {
+    padding-left: $dist;
+}
+
+.menu {
+    @include flexible();
+    &_short-dist {
+        @include dist($short);
+    }
+}

@@ -18,33 +18,22 @@ body {
   line-height: 15px;
 }
 
-/*Стили Хедера*/
+/*Стили, после рефакторинга, относятся к всей странице*/
 .hat {
-  width: 1440px;
+  padding-left: 50px;
   background: #E5E5E5;
 }
 
-.hat__block {
-  width: 1440px;
-  height: 70px;
-  background: #fff;
-  -webkit-box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
-          box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.hat__top {
+  padding-top: 140px;
 }
 
-.hat__block_has-move {
-  margin-top: 140px;
-  margin-left: 50px;
-  margin-bottom: 15px;
+.hat__middle {
+  padding-top: 40px;
 }
 
-.hat__block_change-top {
-  margin-top: 40px;
-}
-
+/*Стили, после рефакторинга, относящиеся ко всей странице*/
+/*Стили логотипа*/
 .hat__logo {
   width: 40px;
   height: 40px;
@@ -82,47 +71,7 @@ body {
   top: 14px;
 }
 
-.hat__logotext {
-  width: 53.19px;
-  height: 12.95px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #1f2041;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  overflow: hidden;
-}
-
-.hat__logotext_has-action {
-  margin-top: 28.33px;
-  margin-left: 12.5px;
-  margin-bottom: 28.33px;
-}
-
 /*Стили меню*/
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.menu_has-move {
-  margin-left: 284.31px;
-}
-
 .menu_has-moved {
   margin-left: 466.31px;
 }

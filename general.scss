@@ -105,23 +105,30 @@ body {
     line-height: 15px;
 }
 
-/*Стили Хедера*/
+
+/*Стили, после рефакторинга, относятся к всей странице*/
+$longerTop: 140px;
+$longTop: 40px; 
+
+@mixin up($top) {
+    padding-top: $top;
+}
+
 .hat {
-    width: 1440px;
+    padding-left: 50px;
     background: #E5E5E5;
-    &__block {
-        width: 1440px;
-        height: 70px;
-        background: #fff;
-        box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
-        display: flex;
-        &_has-move {
-            @include space(140px, 50px, 15px);
-        }
-        &_change-top {
-            margin-top: 40px;
-        }
+    &__top {
+        @include up(140px);
     }
+    &__middle {
+        @include up(40px);
+    }
+}
+/*Стили, после рефакторинга, относящиеся ко всей странице*/
+
+
+/*Стили логотипа*/
+.hat {
     &__logo {
         @include logotype();
         &_has-around {
@@ -134,26 +141,10 @@ body {
     &__last {
         @include short();
     }
-    &__logotext {
-        width: 53.19px;
-        height: 12.95px;
-        @include flexible();
-        color: #1f2041;
-        text-transform: uppercase;
-        font-family: "Montserrat", sans-serif;
-        overflow: hidden;
-        &_has-action {
-            @include space(28.33px, 12.5px, 28.33px);
-        }
-    }
 }
 
 /*Стили меню*/
 .menu {
-    @include flexible();
-    &_has-move {
-        margin-left: 284.31px;
-    }
     &_has-moved {
         margin-left: 466.31px;
     }
