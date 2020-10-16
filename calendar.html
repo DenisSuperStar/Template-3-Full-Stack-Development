@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
         <link rel="stylesheet" href="./general.css">
+        <link rel="stylesheet" href="./button.css">
         <body>
             <header class="hat">
                 <section class="hat__block hat__block_has-move">
@@ -51,10 +52,16 @@
                             </div>
                         </div>
                     </nav>
-                    <div class="hat__cascade hat__cascade_has-move">
-                        <button class="hat__login hat__login_has-dist button">Войти</button>
-                        <button class="hat__account button">Зарегистрироваться</button>
+                    <!-- Рефакторинг выполнен -->
+                    <div class="cascade">
+                        <div class="cascade__inner">
+                            <div class="cascade__btnbox">
+                                <button class="cascade__button cascade__button_small button">Войти</button>
+                            </div>
+                            <button class="cascade__button cascade__button_large button">Зарегистрироваться</button>
+                        </div>
                     </div>
+                    <!-- Рефакторинг выполнен -->
                 </section>
                 <section class="hat__block hat__block_has-move hat__block_change-top">
                     <div class="hat__logo hat__logo_has-around logo">

@@ -146,21 +146,6 @@ body {
             @include space(28.33px, 12.5px, 28.33px);
         }
     }
-    &__cascade {
-        @include flexible();
-        &_has-move {
-            margin-left: 20px;
-        }
-    }
-    &__login {
-        @include button(87px, 34px, $loginColor, $loginLine, $loginBack);
-        &_has-dist {
-            margin-right: 20px;
-        }
-    }
-    &__account {
-        @include button(194px, 34px, $accountColor, $accountLine, $accountBack);
-    }
 }
 
 /*Стили меню*/

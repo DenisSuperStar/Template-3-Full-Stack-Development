@@ -1,0 +1,54 @@
+$widthSmall: 87px;
+$colorSmall: #8ba4f9;
+$borderSmall: 2px solid #8ba4f9;
+$backSmall: #fff;
+
+$widthLarge: 194px;
+$colorLarge: #fff;
+$borderLarge: none;
+$backLarge: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+
+@mixin button($width, $color, $border, $back) {
+    width: $width;
+    color: $color;
+    border: $border;
+    background: $back;
+}
+
+@mixin flexible() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cascade {
+    @include flexible();
+}
+
+.cascade__inner {
+    padding-left: 20px;
+    @include flexible();
+}
+
+.cascade__btnbox {
+    padding-right: 20px;
+}
+
+.cascade__button {
+    height: 34px;
+    border-radius: 22px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.cascade__button_small {
+    @include button($widthSmall, $colorSmall, $borderSmall, $backSmall);
+}
+
+.cascade__button_large {
+    @include button($widthLarge, $colorLarge, $borderLarge, $backLarge);
+}
