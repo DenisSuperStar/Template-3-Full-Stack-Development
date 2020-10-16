@@ -21,7 +21,7 @@
         <body>
             <header class="hat">
                 <section class="hat__top">
-                    <!-- Компонент "Белая полоса", содержит в себе другие компоненты -->
+                    <!-- Компонент Контейнер содержит в себе другие компоненты -->
                     <div class="hat__case case">
                         <!-- Logotype нуждается в рефакторинге -->
                         <div class="hat__logo hat__logo_has-around logo">
@@ -89,63 +89,73 @@
                         </div>
                     </div>
                 </section>
-                <!-- Вторая секция нуждается в рефакторинге -->
                 <section class="hat__middle">
-                    <!-- Компонент "Белая полоса", содержит в себе другие компоненты -->
+                    <!-- Компонент Контейнер, содержит в себе другие компоненты -->
                     <div class="hat__case case">
+                        <!-- Логотип нуждается в рефакторинге -->
                         <div class="hat__logo hat__logo_has-around logo">
                             <div class="hat__first"></div>
                             <div class="hat__last"></div>
                         </div>
-                        <div class="hat__logotext hat__logotext_has-action">Toxin</div>
-                        <nav class="menu menu_has-moved">
-                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__link menu__link_has-dist menu__link_is-active">О нас</a>
-                            <div class="menu__dropdown menu__dropdown_has-dist dropdown menu__is-active is-active">
-                                <div class="menu__dropdown-trigger dropdown-trigger">
-                                    <button class="menu__button button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                        <span class="menu__text text">Услуги</span>
-                                        <span class="menu__icon"></span>
-                                    </button>
-                                </div>
-                                <div class="menu__dropdown-menu dropdown-menu" id="dropdown-menu" role="menu">
-                                    <div class="menu__dropdown-content dropdown-content">
-                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__dropdown-item dropdown-item">Услуга 1</a>
-                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__dropdown-item dropdown-item">Услуга 2</a>
-                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__dropdown-item dropdown-item">Услуга 3</a>
+                        <!-- Логотип нуждается в рефакторинге -->
+                        <div class="hat__company company">
+                            <div class="hat__logotext logotext">Toxin</div>
+                        </div>
+                        <nav class="menu menu_short-dist">
+                            <span class="menu__url url">
+                                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__link menu__link_active link">О нас</a>
+                            </span>
+                            <div class="menu__opened">
+                                <div class="menu__dropdown dropdown">
+                                    <div class="menu__dropdown-trigger dropdown-trigger">
+                                        <div class="menu__dropdownbtn" aria-haspopup="true" aria-controls="dropdown-menu">
+                                            <div class="menu__in">
+                                                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__link menu__link_no-active link">Услуги</a>
+                                                <span class="menu__icon icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu__dropdown-menu dropdown-menu" id="dropdown-menu" role="menu">
+                                        <div class="menu__dropdown-content dropdown-content">
+                                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__dropdown-item dropdown-item">Услуга 1</a>
+                                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__dropdown-item dropdown-item">Услуга 2</a>
+                                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__dropdown-item dropdown-item">Услуга 3</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__link menu__link_has-dist">Вакансии</a>
-                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__link menu__link_has-dist">Новости</a>
-                            <div class="menu__dropdown dropdown menu__is-active is-active">
+                            <span class="menu__url url">
+                                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__link menu__link_no-active link">Вакансии</a>
+                            </span>
+                            <span class="menu__url url">
+                                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__link menu__link_no-active link">Новости</a>
+                            </span>
+                            <div class="menu__dropdown dropdown">
                                 <div class="menu__dropdown-trigger dropdown-trigger">
-                                    <button class="menu__button button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                        <span class="menu__text text">Соглашения</span>
-                                        <span class="menu__icon"></span>
-                                    </button>
+                                    <div class="menu__dropdownbtn" aria-haspopup="true" aria-controls="dropdown-menu">
+                                        <div class="menu__in">
+                                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__link menu__link_no-active link">Соглашения</a>
+                                            <span class="menu__icon icon"></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                <div class="menu__dropdown-menu dropdown-menu" id="dropdown-menu" role="menu">
                                     <div class="menu__dropdown-content dropdown-content">
-                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-item">Соглашение 1</a>
-                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-item">Соглашение 2</a>
-                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-item">Соглашение 3</a>
+                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__dropdown-item dropdown-item">Соглашение 1</a>
+                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__dropdown-item dropdown-item">Соглашение 2</a>
+                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="menu__dropdown-item dropdown-item">Соглашение 3</a>
                                     </div>
                                 </div>
                             </div>
                         </nav>
-                        <!-- Рефакторинг выполнен -->
                         <div class="menu__line">
                             <div class="menu__elem line"></div>
                         </div>
-                        <!-- Рефакторинг выполнен -->
-                        <!-- Рефакторинг выполнен -->
                         <div class="menu__yourself">
                             <div class="menu__name name">Юлий Цезарь</div>
                         </div>
-                        <!-- Рефакторинг выполнен -->
                     </div>
                 </section>
-                <!-- Вторая секция нуждается в рефакторинге -->
             </header>
             <main class="general general_has-around">
                 <aside class="general__col-11">
