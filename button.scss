@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 $widthSmall: 87px;
 $colorSmall: #8ba4f9;
 $borderSmall: 2px solid #8ba4f9;
@@ -13,12 +15,6 @@ $backLarge: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: $color;
     border: $border;
     background: $back;
-}
-
-@mixin flexible() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .cascade {

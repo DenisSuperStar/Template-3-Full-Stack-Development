@@ -190,23 +190,6 @@ body {
     &__dropdown-item {
         @include stylus();
     }
-    &__line {
-        width: 1px;
-        height: 30px;
-        background: rgba(31, 32, 65, 0.1);
-        &_has-dist {
-            margin: 20px;
-        } 
-    }
-    &__name {
-        width: 100px;
-        height: 18px;
-        @include stylus();
-        &_has-align {
-            margin-top: 26px;
-            margin-bottom: 26px;
-        }
-    }
     &__icon {
         &::after {
             content: "\f107";

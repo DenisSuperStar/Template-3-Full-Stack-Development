@@ -176,32 +176,6 @@ body {
   color: rgba(31, 32, 65, 0.5);
 }
 
-.menu__line {
-  width: 1px;
-  height: 30px;
-  background: rgba(31, 32, 65, 0.1);
-}
-
-.menu__line_has-dist {
-  margin: 20px;
-}
-
-.menu__name {
-  width: 100px;
-  height: 18px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.menu__name_has-align {
-  margin-top: 26px;
-  margin-bottom: 26px;
-}
-
 .menu__icon::after {
   content: "\f107";
   font-family: "Font Awesome 5 Pro";

@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
         <link rel="stylesheet" href="./general.css">
         <link rel="stylesheet" href="./button.css">
+        <link rel="stylesheet" href="./line.css">
+        <link rel="stylesheet" href="./name.css">
         <body>
             <header class="hat">
                 <section class="hat__block hat__block_has-move">
@@ -104,8 +106,16 @@
                             </div>
                         </div>
                     </nav>
-                    <div class="menu__line menu__line_has-dist"></div>
-                    <div class="menu__name menu__name_has-align">Юлий Цезарь</div>
+                    <!-- Рефакторинг выполнен -->
+                    <div class="menu__line">
+                        <div class="menu__elem line"></div>
+                    </div>
+                    <!-- Рефакторинг выполнен -->
+                    <!-- Рефакторинг выполнен -->
+                    <div class="menu__yourself">
+                        <div class="menu__name name">Юлий Цезарь</div>
+                    </div>
+                    <!-- Рефакторинг выполнен -->
                 </section>
             </header>
             <main class="general general_has-around">
