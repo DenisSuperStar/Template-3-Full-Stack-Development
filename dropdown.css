@@ -1,0 +1,64 @@
+.menu__dropdown {
+  display: block;
+}
+
+.menu__dropdown-trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__dropdown-trigger:hover + .dropdown-menu {
+  display: block;
+}
+
+.menu__dropdown-item {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.menu__dropdownbtn {
+  padding: 0;
+  border: none;
+}
+
+.menu__opened {
+  padding-right: 20px;
+}
+
+.menu__in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__icon::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  width: 24px;
+  height: 21px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=dropdown.css.map */

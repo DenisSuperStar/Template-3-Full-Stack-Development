@@ -1,0 +1,44 @@
+@import './mixins.scss';
+
+.menu {
+    &__dropdown {
+        display: block;
+        &-trigger {
+            display: flex;
+            &:hover + .dropdown-menu {
+                display: block;
+            }
+        }
+        &-item {
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(31, 32, 65, 0.5);
+        }
+    }
+    &__dropdownbtn {
+        padding: 0;
+        border: none;
+    }
+    &__opened {
+        padding-right: 20px;
+    }
+    &__in {
+        @include flexible();
+    }
+    &__icon {
+        &::after {
+            content: "\f107";
+            font-family: "Font Awesome 5 Pro";
+            width: 24px;
+            height: 21px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 20px;
+            @include flexible();
+        }
+    }
+}

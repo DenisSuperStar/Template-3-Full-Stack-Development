@@ -1,0 +1,31 @@
+$weightNoActive: normal;
+$colorNoActive: rgba(31, 32, 65, 0.5);
+
+$weightActive: bold;
+$colorActive: rgba(31, 32, 65, 0.75);
+
+@mixin link($weight, $color) {
+    font-weight: $weight;
+    color: $color;
+}
+
+.menu {
+    &__url {
+        display: flex;
+        padding-right: 20px;
+    }
+    &__link {
+        display: inline-block;
+        height: 18px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 17px;
+        &_no-active {
+            @include link($weightNoActive, $colorNoActive);
+        }
+        &_active {
+            @include link($weightActive, $colorNoActive);
+        }
+    }
+}

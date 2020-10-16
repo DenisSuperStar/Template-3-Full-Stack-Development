@@ -1,0 +1,26 @@
+.menu__url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 20px;
+}
+
+.menu__link {
+  display: inline-block;
+  height: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.menu__link_no-active {
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.menu__link_active {
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.5);
+}
+/*# sourceMappingURL=item.css.map */

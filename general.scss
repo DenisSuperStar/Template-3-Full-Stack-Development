@@ -157,52 +157,6 @@ body {
     &_has-moved {
         margin-left: 466.31px;
     }
-    &__link {
-        display: block;
-        height: 18px;
-        @include stylus();
-        &_is-active {
-            font-weight: bold;
-            color: rgba(31, 32, 65, 0.75);
-        }
-        &_has-dist {
-            @extend .has-dist;
-        }  
-    }
-    &__dropdown {
-        display: block;
-        height: 20px;
-        &_has-dist {
-            @extend .has-dist;
-        }
-    }
-    &__button {
-        height: 18px;
-        border: none;
-        padding: 0;
-    }
-    &__text {
-        @include stylus();
-    }
-    &__dropdown-content {
-        display: none;
-    }
-    &__dropdown-item {
-        @include stylus();
-    }
-    &__icon {
-        &::after {
-            content: "\f107";
-            font-family: "Font Awesome 5 Pro";
-            width: 24px;
-            height: 21px;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 20px;
-            @include flexible();
-        }
-    }
 }
 
 /*Стили центральной конентной части*/
