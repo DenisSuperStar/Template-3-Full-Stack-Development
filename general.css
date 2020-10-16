@@ -71,11 +71,6 @@ body {
   top: 14px;
 }
 
-/*Стили меню*/
-.menu_has-moved {
-  margin-left: 466.31px;
-}
-
 /*Стили центральной конентной части*/
 .general {
   display: -webkit-box;

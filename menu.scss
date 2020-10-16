@@ -1,6 +1,7 @@
 @import './mixins.scss';
 
 $short: 284.31px;
+$long: 466.31px;
 
 @mixin dist($dist) {
     padding-left: $dist;
@@ -10,5 +11,8 @@ $short: 284.31px;
     @include flexible();
     &_short-dist {
         @include dist($short);
+    }
+    &_long-dist {
+        @include dist($long);
     }
 }
