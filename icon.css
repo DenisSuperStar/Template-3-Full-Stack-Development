@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*Стили иконки верхнего меню*/
+.icon::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  width: 24px;
+  height: 21px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=icon.css.map */
