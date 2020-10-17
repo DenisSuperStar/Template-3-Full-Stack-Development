@@ -1,0 +1,7 @@
+@import './mixins.scss';
+
+/*Компонент текстовый контейнер*/
+.company {
+    padding-left: 12.5px;
+    @include flexible();
+}
