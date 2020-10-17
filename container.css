@@ -1,4 +1,6 @@
-.hat__case {
+@charset "UTF-8";
+/*Компонент контейнер*/
+.case {
   width: 100%;
   height: 70px;
   background: #fff;
