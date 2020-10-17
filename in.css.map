@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": ";AAEA,4CAA4C;AAC5C,AAAA,GAAG,CAAC;ECFA,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CDEtB",
+    "sources": [
+        "in.scss",
+        "mixins.scss"
+    ],
+    "names": [],
+    "file": "in.css"
+}

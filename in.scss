@@ -1,0 +1,6 @@
+@import './mixins.scss';
+
+/*Компонент центрирующая внутрення область*/
+.in {
+    @include flexible();
+}
