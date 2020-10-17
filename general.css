@@ -10,26 +10,89 @@ body {
   border: 1px solid transparent;
 }
 
-.has-dist {
-  margin-right: 20px;
-}
-
-.limit, .general__col-12 .general__menu-list, .general__col-13 .general__menu-list, .general__col-14 .general__menu-list, .general__col-15 .general__menu-list {
-  line-height: 15px;
-}
-
-/*Стили, после рефакторинга, относятся к всей странице*/
-.hat {
+/*Стили, после рефакторинга, относятся ко всей странице*/
+.page__content {
   padding-left: 50px;
-  background: #E5E5E5;
 }
 
-.hat__top {
+.page__content-top--edge {
+  padding-top: 40px;
+}
+
+.hat__section {
   padding-top: 140px;
 }
 
-.hat__middle {
+.hat__clone {
   padding-top: 40px;
+}
+
+.menu__opened {
+  padding-right: 20px;
+}
+
+.case__line {
+  padding: 20px;
+}
+
+.case__yourself {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown-trigger__dropdownbtn {
+  padding: 0;
+  border: none;
+}
+
+/*Пункт-заглушка для последнего списка*/
+.clmn__item.clmn__item-reserve {
+  color: transparent;
+}
+
+.main__content {
+  height: 372px;
+  background: #fff;
+  -webkit-box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+          box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 372px;
+}
+
+.main__col-11 {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.main__col-12 {
+  margin-right: 57px;
+}
+
+.main__col-13 {
+  margin-right: 92px;
+}
+
+.main__col-14 {
+  margin-right: 51px;
+}
+
+.main__col-15 {
+  margin-right: auto;
 }
 
 /*Стили, после рефакторинга, относящиеся ко всей странице*/
@@ -71,26 +134,7 @@ body {
   top: 14px;
 }
 
-/*Стили центральной конентной части*/
-.general {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #fff;
-  -webkit-box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
-          box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
-  width: 1440px;
-  height: 372px;
-}
-
-.general_has-around {
-  margin-top: 40px;
-  margin-left: 50px;
-}
-
+/*Не трогать !*/
 .general__logobox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,165 +172,7 @@ body {
   top: 14px;
 }
 
-.general__logotext {
-  width: 53.19px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #1f2041;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  overflow: hidden;
-}
-
-.general__logotext_has-dist {
-  margin-left: 12.5px;
-}
-
-.general__item {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.general__item_has-active {
-  font-weight: bold;
-  color: #1f2041;
-  text-transform: uppercase;
-}
-
-.general__item_has-main {
-  margin-bottom: 21px;
-}
-
-.general__item_has-indent {
-  margin-bottom: 20px;
-}
-
-.general__item_has-empty {
-  color: transparent;
-}
-
-.general__description {
-  width: 260px;
-  height: 72px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.general__col-11 {
-  margin-left: 140px;
-  margin-right: 40px;
-}
-
-.general__col-12 {
-  margin-right: 67px;
-}
-
-.general__col-12 .general__menu-list {
-  width: 130px;
-}
-
-.general__col-13 {
-  margin-right: 100px;
-}
-
-.general__col-13 .general__menu-list {
-  width: 100px;
-}
-
-.general__col-14 {
-  margin-right: 51px;
-}
-
-.general__col-14 .general__menu-list {
-  width: 150px;
-}
-
-.general__col-15 .general__menu-list_bottom {
-  margin-top: -20px;
-  margin-bottom: 20px;
-}
-
-.general__col-15 .general__menu-list > .general__item:nth-child(2) {
-  width: 245px;
-  height: 35px;
-}
-
-.general__email {
-  background: #fff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  width: 260px;
-  height: 44px;
-  padding-top: 10px;
-  padding-left: 15px;
-  position: relative;
-}
-
-.general__email_has-reset {
-  margin-bottom: 0;
-}
-
-.general__placeholder {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.25);
-  width: 40px;
-  height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.general__icon::after {
-  content: "\f061";
-  font-family: "Font Awesome 5 Pro";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  color: #8ba4f9;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 44px;
-  height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
+/*Не трогать*/
 /*Стили футера*/
 .common__content-btm {
   display: -webkit-box;

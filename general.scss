@@ -1,5 +1,6 @@
 /*Подключение шрифта Montserrat с настройками по умолчанию*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import './mixins.scss';
 
 $radius: 0 100px 500px 100px;
 $line: 2px solid #8ba4f9;
@@ -51,41 +52,6 @@ $accountBack: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     top: 14px;
 }
 
-@mixin flexible {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin stylus {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: rgba(31, 32, 65, 0.5);
-}
-
-@mixin button($width, $height, $color, $line, $back) {
-    width: $width;
-    height: $height;
-    color: $color;
-    border: $line;
-    background: $back;
-    border-radius: 22px;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-}
-
-@mixin catch {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 
 /*1) Проверить работоспособность всех тегов без html*/
 /*2) Проверить все поля на переполнение*/
@@ -97,35 +63,82 @@ body {
     border: 1px solid transparent;
 }
 
-.has-dist {
-    margin-right: 20px;
-}
+/*Стили, после рефакторинга, относятся ко всей странице*/
 
-.limit {
-    line-height: 15px;
-}
-
-
-/*Стили, после рефакторинга, относятся к всей странице*/
-$longerTop: 140px;
-$longTop: 40px; 
-
-@mixin up($top) {
-    padding-top: $top;
+.page {
+    &__content {
+        padding-left: 50px;
+        &-top--edge {
+            padding-top: 40px;
+        }
+    }
 }
 
 .hat {
-    padding-left: 50px;
-    background: #E5E5E5;
-    &__top {
-        @include up(140px);
+    &__section {
+        padding-top: 140px;
     }
-    &__middle {
-        @include up(40px);
+    &__clone {
+        padding-top: 40px;
+    }
+}
+
+.menu {
+    &__opened {
+        padding-right: 20px; 
+    }
+}
+
+.case {
+    &__line {
+        padding: 20px; 
+    }
+    &__yourself {
+        @include flexible();
+    }
+}
+
+.dropdown-trigger__dropdownbtn {
+    padding: 0;
+    border: none;
+}
+
+ /*Пункт-заглушка для последнего списка*/
+
+.clmn {
+    &__item.clmn__item-reserve {
+        color: transparent;
+    }
+}
+
+.main {
+    &__content {
+        height: 372px;
+        background: #fff;
+        box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 372px;
+    }
+    &__col-11 {
+        margin-left: auto;
+        margin-right: 40px;
+    }
+    &__col-12 {
+        margin-right: 57px;
+    }
+    &__col-13 {
+        margin-right: 92px;
+    }
+    &__col-14 {
+        margin-right: 51px;
+    }
+    &__col-15 {
+        margin-right: auto;
     }
 }
 /*Стили, после рефакторинга, относящиеся ко всей странице*/
-
 
 /*Стили логотипа*/
 .hat {
@@ -143,19 +156,8 @@ $longTop: 40px;
     }
 }
 
-/*Стили центральной конентной части*/
-
+/*Не трогать !*/
 .general {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
-    width: 1440px;
-    height: 372px;
-    &_has-around {
-        margin-top: 40px;
-        margin-left: 50px;
-    }
     &__logobox {
         display: flex;
     }
@@ -168,135 +170,12 @@ $longTop: 40px;
     &__last {
         @include short();
     }
-    &__logotext {
-        width: 53.19px;
-        @include flexible();
-        color: #1f2041;
-        text-transform: uppercase;
-        font-family: "Montserrat", sans-serif;
-        overflow: hidden;
-        &_has-dist {
-            margin-left: 12.5px;
-        }
-    }
-    &__item {
-        font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 15px;
-        color: rgba(31, 32, 65, 0.5);
-        &_has-active {
-            font-weight: bold;
-            color: #1f2041;
-            text-transform: uppercase;
-        }
-        &_has-main {
-            margin-bottom: 21px;
-        }
-        &_has-indent {
-            margin-bottom: 20px;
-        }
-        &_has-empty {
-            color: transparent;
-        }
-    }
-    &__description {
-        width: 260px;
-        height: 72px;
-        font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
-    }
-    &__col-11 {
-        margin-left: 140px;
-        margin-right: 40px;
-    }
-    &__col-12 {
-        margin-right: 67px;
-        .general__menu-list {
-            width: 130px;
-            @extend .limit;
-        }
-    }
-    &__col-13 {
-        margin-right: 100px;
-        .general__menu-list {
-            width: 100px;
-            @extend .limit;
-        }
-    }
-    &__col-14 {
-        margin-right: 51px;
-        .general__menu-list {
-            width: 150px;
-            @extend .limit;
-        }
-    }
-    &__col-15 {
-        .general__menu-list {
-            @extend .limit;
-            &_bottom {
-                margin-top: -20px;
-                margin-bottom: 20px;
-            }
-        }
-        .general__menu-list > .general__item {
-            &:nth-child(2) {
-                width: 245px;
-                height: 35px;
-            }
-        }
-    }
-    &__email {
-        background: #fff;
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        box-sizing: border-box;
-        border-radius: 4px;
-        width: 260px;
-        height: 44px;
-        padding-top: 10px;
-        padding-left: 15px;
-        position: relative;
-        &_has-reset {
-            margin-bottom: 0;
-        }
-    }
-    &__placeholder {
-        font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        color: rgba(31, 32, 65, 0.25);
-        width: 40px;
-        height: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-    &__icon::after {
-        content: "\f061";
-        font-family: "Font Awesome 5 Pro";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 24px;
-        color: #8ba4f9;
-        @include catch();
-        width: 44px;
-        height: 44px;
-        @include flexible();
-    }
 }
+/*Не трогать*/
+
+
 
 /*Стили футера*/
-
-
-
 .common__content-btm {
     display: flex;
     justify-content: space-between;
