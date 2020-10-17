@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Подключение шрифта Montserrat с настройками по умолчанию*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/*Используемый в работе миксин*/
 /*1) Проверить работоспособность всех тегов без html*/
 /*2) Проверить все поля на переполнение*/
 /*3) Дописать семантическую разметку*/
@@ -95,8 +96,39 @@ body {
   margin-right: auto;
 }
 
+/*Стили футера*/
+.social__box, .basement__socialbox, .basement__social--icons {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basement__row {
+  width: calc(70% + 35px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basement__social--icons-edge {
+  margin-right: 140px;
+}
+
 /*Стили, после рефакторинга, относящиеся ко всей странице*/
-/*Стили логотипа*/
+/*Стили логотипа, нуждающиеся в исправлении, начало блока*/
 .hat__logo {
   width: 40px;
   height: 40px;
@@ -134,7 +166,6 @@ body {
   top: 14px;
 }
 
-/*Не трогать !*/
 .general__logobox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,124 +203,8 @@ body {
   top: 14px;
 }
 
-/*Не трогать*/
-/*Стили футера*/
-.common__content-btm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #fff;
-  width: 1300px;
-  height: 70px;
-}
-
-.common__content-btm_offset {
-  padding-left: 140px;
-  margin-left: 50px;
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-
-.common__content-btm_action {
-  -webkit-box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
-          box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
-}
-
-.common__copyright {
-  width: 370px;
-  height: 18px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.common__socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 140px;
-}
-
-.common__tw::after {
-  content: "\f099";
-  font-family: "Font Awesome 5 Brands";
-  width: 24px;
-  height: 24px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 23px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #8ba4f9;
-}
-
-.common__fb::after {
-  content: "\f082";
-  font-family: "Font Awesome 5 Brands";
-  width: 24px;
-  height: 24px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 23px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #fff;
-  color: #8ba4f9;
-}
-
-.common__ins::after {
-  content: "\f16d";
-  font-family: "Font Awesome 5 Brands";
-  width: 24px;
-  height: 24px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 23px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #8ba4f9;
-}
-
+/*Стили логотипа, нуждающиеся в исправлении, конец блока*/
+/*Стили самой нижней области в футере и Нуждаются в рефакторинге!*/
 .common__central {
   background: #fff;
   display: -webkit-box;

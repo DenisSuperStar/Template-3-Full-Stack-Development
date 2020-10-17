@@ -52,6 +52,12 @@ $accountBack: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     top: 14px;
 }
 
+/*Используемый в работе миксин*/
+@mixin between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /*1) Проверить работоспособность всех тегов без html*/
 /*2) Проверить все поля на переполнение*/
@@ -64,7 +70,6 @@ body {
 }
 
 /*Стили, после рефакторинга, относятся ко всей странице*/
-
 .page {
     &__content {
         padding-left: 50px;
@@ -138,9 +143,32 @@ body {
         margin-right: auto;
     }
 }
+
+/*Стили футера*/
+.social__box {
+    width: 100px;
+    @include between();
+}
+
+.basement {
+    &__row {
+        width: calc(70% + 35px);
+        @include between();
+    }
+    &__socialbox {
+        @extend .social__box;
+    }
+    &__social--icons {
+        @extend .social__box;
+        &-edge {
+            margin-right: 140px;
+        }
+    }
+}
+
 /*Стили, после рефакторинга, относящиеся ко всей странице*/
 
-/*Стили логотипа*/
+/*Стили логотипа, нуждающиеся в исправлении, начало блока*/
 .hat {
     &__logo {
         @include logotype();
@@ -156,7 +184,6 @@ body {
     }
 }
 
-/*Не трогать !*/
 .general {
     &__logobox {
         display: flex;
@@ -171,96 +198,10 @@ body {
         @include short();
     }
 }
-/*Не трогать*/
+/*Стили логотипа, нуждающиеся в исправлении, конец блока*/
 
 
-
-/*Стили футера*/
-.common__content-btm {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
-    width: 1300px;
-    height: 70px;
-}
-
-.common__content-btm_offset {
-    padding-left: 140px;
-    margin-left: 50px;
-    padding-top: 26px;
-    padding-bottom: 26px;
-}
-
-.common__content-btm_action {
-    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
-}
-
-.common__copyright {
-    width: 370px;
-    height: 18px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: rgba(31, 32, 65, 0.75);
-}
-
-.common__socials {
-    display: flex;
-    width: 100px;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 140px;
-}
-
-.common__tw::after {
-    content: "\f099";
-    font-family: "Font Awesome 5 Brands";
-    width: 24px;
-    height: 24px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:  #8ba4f9;
-}
-
-.common__fb::after {
-    content: "\f082";
-    font-family: "Font Awesome 5 Brands";
-    width: 24px;
-    height: 24px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 23px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    color: #8ba4f9;
-}
-
-.common__ins::after {
-    content: "\f16d";
-    font-family: "Font Awesome 5 Brands";
-    width: 24px;
-    height: 24px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 23px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #8ba4f9;
-}
-
+/*Стили самой нижней области в футере и Нуждаются в рефакторинге!*/
 .common__central {
     background: #fff;
     display: flex;
