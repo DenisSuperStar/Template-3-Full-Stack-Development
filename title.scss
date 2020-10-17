@@ -3,17 +3,11 @@
 $colorTitle: #1f2041;
 $colorUpper: uppercase;
 
-.hat {
-    &__company {
-        padding-left: 12.5px;
-        @include flexible();
-    }
-    &__logotext {
-        @include flexible();
-        color: $colorTitle;
-        text-transform: $colorUpper;
-        font-family: "Montserrat", sans-serif;
-        padding-top: 1px;
-        overflow: hidden;
-    }
+.logotext {
+    @include flexible();
+    color: $colorTitle;
+    text-transform: $colorUpper;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 1px;
+    overflow: hidden; 
 }
