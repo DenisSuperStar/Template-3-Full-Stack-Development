@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Обертки для каскада кнопок*/
 .cascade {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,7 +29,8 @@
   padding-right: 20px;
 }
 
-.cascade__button {
+/*Компонент Кнопка*/
+.button {
   height: 34px;
   border-radius: 22px;
   text-transform: uppercase;
@@ -38,14 +41,14 @@
   line-height: 15px;
 }
 
-.cascade__button_small {
+.button-small {
   width: 87px;
   color: #8ba4f9;
   border: 2px solid #8ba4f9;
   background: #fff;
 }
 
-.cascade__button_large {
+.button-large {
   width: 194px;
   color: #fff;
   border: none;
