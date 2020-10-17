@@ -4,9 +4,9 @@ $colorTitle: #1f2041;
 $colorUpper: uppercase;
 
 .logotext {
-    @include flexible();
     color: $colorTitle;
     text-transform: $colorUpper;
+    @include flexible();
     font-family: "Montserrat", sans-serif;
     padding-top: 1px;
     overflow: hidden; 
