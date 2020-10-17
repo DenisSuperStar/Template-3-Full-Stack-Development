@@ -1,10 +1,5 @@
-@import './mixins.scss';
-
-.menu__yourself {
-    @include flexible();
-}
-
-.menu__name {
+/*Компонент полное имя*/
+.name {
     width: 100px;
     height: 18px;
     font-family: "Montserrat", sans-serif;
