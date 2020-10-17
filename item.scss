@@ -9,23 +9,18 @@ $colorActive: rgba(31, 32, 65, 0.75);
     color: $color;
 }
 
-.menu {
-    &__url {
-        display: flex;
-        padding-right: 20px;
+/*Компонент link, его необязательно вкладывать в компонент url*/
+.link {
+    display: inline-block;
+    height: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    &-no--active {
+        @include link($weightNoActive, $colorNoActive);
     }
-    &__link {
-        display: inline-block;
-        height: 18px;
-        font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-size: 14px;
-        line-height: 17px;
-        &_no-active {
-            @include link($weightNoActive, $colorNoActive);
-        }
-        &_active {
-            @include link($weightActive, $colorNoActive);
-        }
+    &-active {
+        @include link($weightActive, $colorActive);
     }
 }
