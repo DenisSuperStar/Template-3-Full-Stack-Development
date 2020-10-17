@@ -47,6 +47,10 @@
         <link rel="stylesheet" href="./email.css">
         <!-- Компонент для отправки эл.почты -->
         <link rel="stylesheet" href="./icon__action.css">
+        <!-- Компонент копирайт -->
+        <link rel="stylesheet" href="./copyright.css">
+        <!-- Компонент иконка соц сети -->
+        <link rel="stylesheet" href="./social__icon.css">
         <!-- Подключение компонентов, конец блока -->
         <body class="page">
             <header class="hat page__content">
@@ -240,16 +244,24 @@
                     </div>
                 </article>
             </main>
-    
-            <!-- Секция для рефакторинга для переноса в футер, начало блока -->
-            <div class="common__content-btm common__content-btm_action common__content-btm_offset">
-                <div class="common__copyright copyright">Copyright &#169; 2018 Toxin отель. Все права защищены</div>
-                <div class="common__socials">
-                    <div class="common__tw tw"></div>
-                    <div class="common__fb fb"></div>
-                    <div class="common__ins ins"></div>
+            <footer class="basement page__content">
+                <div class="basement__case case">
+                   <div class="basement__row">
+                    <div class="basement__col-11">
+                        <div class="basement__copyright copyright">Copyright &#169; 2018 Toxin отель. Все права защищены</div>
+                    </div>
+                    <div class="basement__col-12">
+                        <div class="basement__socialbox">
+                            <div class="basement__tw social-icon social-icon--tw"></div>
+                            <div class="basement__fb social-icon social-icon--fb"></div>
+                            <div class="basement__ins social-icon social-icon--ins"></div> 
+                        </div>
+                    </div>
+                   </div>
                 </div>
-            </div>
+            </footer>
+    
+            <!-- Секция, нуждающаяся в рефакторинге, начало -->
             <div class="common__central common__central_place">
                 <div class="common__wrap-logo common__wrap-logo_btm">
                     <div class="common__logo common__logo_around common__logo_reset">
@@ -265,7 +277,7 @@
                     <div class="common__ins ins"></div>
                 </div>
             </div>
-            <!-- Секция для рефакторинга для переноса в футер, конец блока -->
+            <!-- Секция, нуждающаяся в рефакторинге, конец-->
         </body>
     </head>
 </html>
