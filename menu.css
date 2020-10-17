@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Компонент блока меню*/
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,11 +12,11 @@
           align-items: center;
 }
 
-.menu_short-dist {
+.menu-short--dist {
   padding-left: 284.31px;
 }
 
-.menu_long-dist {
+.menu-long--dist {
   padding-left: 466.31px;
 }
 /*# sourceMappingURL=menu.css.map */

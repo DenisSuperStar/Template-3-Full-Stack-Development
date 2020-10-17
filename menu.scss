@@ -7,12 +7,13 @@ $long: 466.31px;
     padding-left: $dist;
 }
 
+/*Компонент блока меню*/
 .menu {
     @include flexible();
-    &_short-dist {
+    &-short--dist {
         @include dist($short);
     }
-    &_long-dist {
+    &-long--dist {
         @include dist($long);
     }
 }
