@@ -3,17 +3,7 @@
 $short: 284.31px;
 $long: 466.31px;
 
-@mixin dist($dist) {
-    padding-left: $dist;
-}
-
 /*Компонент блока меню*/
 .menu {
     @include flexible();
-    &-short--dist {
-        @include dist($short);
-    }
-    &-long--dist {
-        @include dist($long);
-    }
 }
