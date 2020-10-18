@@ -2,21 +2,28 @@
 /*Подключение шрифта Montserrat с настройками по умолчанию*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 /*Используемый в работе миксин*/
+/*Для html*/
 /*1) Проверить работоспособность всех тегов без html*/
 /*2) Проверить все поля на переполнение*/
 /*3) Дописать семантическую разметку*/
 /*4) Взять данные у менеджера для SEO: метатег с атрибутами: keywords, description*/
+/*Для css*/
+/*1) Заменить подключение шрифта вверху на подключение в линк*/
+/*2) Прижать футер к низу*/
+/*3) Переменные со сложными имена разделять одним нижним подчеркиванием*/
+/*4) Приписать заданный цвет фона, цвет шрифта, семейство шрифта у html*/
+/*5) Посещенные ссылки :visited, убрать цвет по умолчанию*/
+/*6) Добавить элементу cursor: pointer, который по логике должен быть кликабелен, но у него этого нет*/
+/*7) Для полей ввода для события :focus выставить outline: none, поля ввода располагаются в форме*/
+/*Разложить файлы*/
+/*8) Создать папку компоненты scss*/
+/*9) Для каждого блока создать свою папку*/
+/*10) Положить блок scss в соотвествующую папку*/
+/*11) Проверить все css файлы с кодом на наличия горизонтальной прокрутки, ее быть не должно*/
+/*12) Для всех элементов, у которых выставлена ширина в процентах, задать min-width, max-width*/
 body {
   background: #E5E5E5;
   border: 1px solid transparent;
-}
-
-.page__content {
-  padding-left: 50px;
-}
-
-.page__content-top--edge {
-  padding-top: 40px;
 }
 
 .hat__section-top--point {
@@ -93,11 +100,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 372px;
+}
+
+.main__content-top--edge {
+  padding-top: 40px;
 }
 
 .main__col-11 {
-  margin-left: auto;
+  padding-left: 14rem;
   margin-right: 40px;
 }
 
@@ -114,13 +124,14 @@ body {
 }
 
 .main__col-15 {
-  margin-right: auto;
+  padding-right: 14rem;
 }
 
 .main__attribs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 20px;
 }
 
 /*Стили футера*/
@@ -150,7 +161,8 @@ body {
 }
 
 .basement__row {
-  width: 72.56%;
+  width: 71.86%;
+  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,8 +198,14 @@ body {
 }
 
 @media screen and (min-width: 1904px) {
+  .main__col-11 {
+    padding-left: 23.86rem;
+  }
+  .main__col-15 {
+    padding-right: 23.86rem;
+  }
   .basement__row {
-    width: 59.86%;
+    width: 60.36%;
   }
 }
 /*# sourceMappingURL=general.css.map */
