@@ -15,5 +15,12 @@ $shadowHat: 0 10px 20px rgba(31, 32, 65, 0.05);
 /*Компонент контейнер*/
 .case {
     @include container($widthHat, $heightHat, $backHat, $shadowHat);
-    @include flexible();  
+    @include flexible();
+    &-vertical {
+        flex-direction: column;
+    }
+    &-little {
+        width: 768px;
+        height: 367px;
+    }  
 }

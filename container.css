@@ -16,4 +16,16 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.case-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.case-little {
+  width: 768px;
+  height: 367px;
+}
 /*# sourceMappingURL=container.css.map */
