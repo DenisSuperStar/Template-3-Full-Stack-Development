@@ -2,56 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import './mixins.scss';
 
-$radius: 0 100px 500px 100px;
-$line: 2px solid #8ba4f9;
-$turn: rotate(-70deg);
-
-$radiusLogo: 0 100px 100px 0;
-$lineLogo: 2px solid #66d2ea;
-$rotation: rotate(240deg);
-
-$loginColor: #8ba4f9;
-$loginLine:2px solid #8ba4f9;
-$loginBack: #fff;
-
-$accountColor: #fff;
-$accountLine: none;
-$accountBack: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-
-@mixin logotype {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #8ba4f9;
-    position: relative;
-}
-
-@mixin space($top, $left, $bottom) {
-    margin-top: $top;
-    margin-left: $left;
-    margin-bottom: $bottom;
-}
-
-@mixin logo($width, $height, $fullRadius, $borderRight, $rotate, $leftSpace) {
-    width: $width;
-    height: $height;
-    border-radius: $fullRadius;
-    border-right: $borderRight;
-    transform: $rotate;
-    margin-left: $leftSpace;
-}
-
-@mixin long {
-    @include logo(11.76px, 11.76px, $radius, $line, $turn, 7.4px);
-    margin-top: 15.29px;
-}
-
-@mixin short {
-    @include logo(9.12px, 9.12px, $radiusLogo, $lineLogo, $rotation, 20px);
-    position: absolute;
-    top: 14px;
-}
-
 /*Используемый в работе миксин*/
 @mixin between {
     display: flex;
@@ -81,10 +31,15 @@ body {
 
 .hat {
     &__section {
-        padding-top: 140px;
+        &-top--point {
+            padding-top: 140px;
+        }
     }
     &__clone {
-        padding-top: 40px;
+        position: relative;
+        &-top--point {
+            padding-top: 40px;
+        }
     }
 }
 
@@ -95,6 +50,17 @@ body {
 }
 
 .case {
+    &__inrapper {
+        width: 40px;
+        height: 70px;
+        @include flexible();
+    }
+    &__col-13 {
+        padding-left: 284.31px;
+    }
+    &__col-32 {
+        padding-left: 466.31px;
+    }
     &__line {
         padding: 20px; 
     }
@@ -150,9 +116,13 @@ body {
     @include between();
 }
 
+.flexes {
+    @include flexible();
+}
+
 .basement {
     &__row {
-        width: calc(70% + 35px);
+        width: 72.56%;
         @include between();
     }
     &__socialbox {
@@ -164,80 +134,49 @@ body {
             margin-right: 140px;
         }
     }
-}
-
-/*Стили, после рефакторинга, относящиеся ко всей странице*/
-
-/*Стили логотипа, нуждающиеся в исправлении, начало блока*/
-.hat {
-    &__logo {
-        @include logotype();
-        &_has-around {
-            @include space(15px, 140px, 15px);  
+    &__col-11 {
+        &--btm {
+            margin-bottom: 20px;
         }
     }
-    &__first {
-        @include long();
-    }
-    &__last {
-        @include short();
-    }
-}
 
-.general {
-    &__logobox {
-        display: flex;
+    &__col-12 {
+        @extend .flexes;
+        &--btm {
+            margin-bottom: 25px;
+        }
     }
-    &__logo {
-        @include logotype();
+    &__col-13 {
+        @extend .flexes;
     }
-    &__first {
-        @include long();
-    }
-    &__last {
-        @include short();
+    &__square {
+        &-centered {
+            @extend .flexes;
+        }
+        &-straight--sides {
+            padding-top: 40px;
+            padding-bottom: 140px;
+        }
     }
 }
-/*Стили логотипа, нуждающиеся в исправлении, конец блока*/
+/*Стили, после рефакторинга, относящиеся ко всей странице*/
 
-
-/*Стили самой нижней области в футере и Нуждаются в рефакторинге!*/
-.common__central {
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 768px;
-    height: 367px;
-    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
-}
-
-.common__logo_reset {
-    margin: 0;
-}
-
-.common__socials_reset {
-    margin-right: 0;
-}
-
-.common__central_place {
-    margin: 40px 336px 140px 336px;
-}
-
-.common__logotext_normalize {
-    margin: 0;
-    width: 53.19px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.common__wrap-logo_btm {
-    margin-bottom: 20px;
-}
-
-.common__copyright_down {
-    margin-bottom: 25px;
+/*Медиа-запросы*/
+/*@media screen and (min-width: 1600px) {
+    .case {
+        &__innerblock {
+            margin-right: auto;
+            margin-left: 167px;
+        }
+        &__boxbtns {
+            margin-right: 140px;
+        }
+    }
+}*/
+@media screen and (min-width: 1904px) {
+    .basement {
+        &__row {
+            width: 59.86%;
+        }
+    }
 }

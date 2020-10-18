@@ -20,16 +20,42 @@ body {
   padding-top: 40px;
 }
 
-.hat__section {
+.hat__section-top--point {
   padding-top: 140px;
 }
 
 .hat__clone {
+  position: relative;
+}
+
+.hat__clone-top--point {
   padding-top: 40px;
 }
 
 .menu__opened {
   padding-right: 20px;
+}
+
+.case__inrapper {
+  width: 40px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case__col-13 {
+  padding-left: 284.31px;
+}
+
+.case__col-32 {
+  padding-left: 466.31px;
 }
 
 .case__line {
@@ -110,8 +136,20 @@ body {
           align-items: center;
 }
 
+.flexes, .basement__col-12, .basement__col-13, .basement__square-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .basement__row {
-  width: calc(70% + 35px);
+  width: 72.56%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,137 +165,35 @@ body {
   margin-right: 140px;
 }
 
-/*Стили, после рефакторинга, относящиеся ко всей странице*/
-/*Стили логотипа, нуждающиеся в исправлении, начало блока*/
-.hat__logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #8ba4f9;
-  position: relative;
-}
-
-.hat__logo_has-around {
-  margin-top: 15px;
-  margin-left: 140px;
-  margin-bottom: 15px;
-}
-
-.hat__first {
-  width: 11.76px;
-  height: 11.76px;
-  border-radius: 0 100px 500px 100px;
-  border-right: 2px solid #8ba4f9;
-  -webkit-transform: rotate(-70deg);
-          transform: rotate(-70deg);
-  margin-left: 7.4px;
-  margin-top: 15.29px;
-}
-
-.hat__last {
-  width: 9.12px;
-  height: 9.12px;
-  border-radius: 0 100px 100px 0;
-  border-right: 2px solid #66d2ea;
-  -webkit-transform: rotate(240deg);
-          transform: rotate(240deg);
-  margin-left: 20px;
-  position: absolute;
-  top: 14px;
-}
-
-.general__logobox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.general__logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #8ba4f9;
-  position: relative;
-}
-
-.general__first {
-  width: 11.76px;
-  height: 11.76px;
-  border-radius: 0 100px 500px 100px;
-  border-right: 2px solid #8ba4f9;
-  -webkit-transform: rotate(-70deg);
-          transform: rotate(-70deg);
-  margin-left: 7.4px;
-  margin-top: 15.29px;
-}
-
-.general__last {
-  width: 9.12px;
-  height: 9.12px;
-  border-radius: 0 100px 100px 0;
-  border-right: 2px solid #66d2ea;
-  -webkit-transform: rotate(240deg);
-          transform: rotate(240deg);
-  margin-left: 20px;
-  position: absolute;
-  top: 14px;
-}
-
-/*Стили логотипа, нуждающиеся в исправлении, конец блока*/
-/*Стили самой нижней области в футере и Нуждаются в рефакторинге!*/
-.common__central {
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 768px;
-  height: 367px;
-  -webkit-box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
-          box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
-}
-
-.common__logo_reset {
-  margin: 0;
-}
-
-.common__socials_reset {
-  margin-right: 0;
-}
-
-.common__central_place {
-  margin: 40px 336px 140px 336px;
-}
-
-.common__logotext_normalize {
-  margin: 0;
-  width: 53.19px;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.common__wrap-logo_btm {
+.basement__col-11--btm {
   margin-bottom: 20px;
 }
 
-.common__copyright_down {
+.basement__col-12--btm {
   margin-bottom: 25px;
+}
+
+.basement__square-straight--sides {
+  padding-top: 40px;
+  padding-bottom: 140px;
+}
+
+/*Стили, после рефакторинга, относящиеся ко всей странице*/
+/*Медиа-запросы*/
+/*@media screen and (min-width: 1600px) {
+    .case {
+        &__innerblock {
+            margin-right: auto;
+            margin-left: 167px;
+        }
+        &__boxbtns {
+            margin-right: 140px;
+        }
+    }
+}*/
+@media screen and (min-width: 1904px) {
+  .basement__row {
+    width: 59.86%;
+  }
 }
 /*# sourceMappingURL=general.css.map */
