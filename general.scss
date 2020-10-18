@@ -37,8 +37,6 @@ body {
     border: 1px solid transparent;
 }
 
-
-
 .hat {
     &__section {
         &-top--point {
@@ -95,12 +93,10 @@ body {
         height: 372px;
         background: #fff;
         box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &-top--edge {
-            padding-top: 40px;
-        }
+        @include between();
+    }
+    &-top--point {
+        padding-top: 40px;
     }
     &__col-11 {
         padding-left: 14rem;
