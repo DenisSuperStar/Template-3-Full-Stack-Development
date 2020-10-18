@@ -12,9 +12,8 @@ $radiusLess: 50%;
 }
 
 .logo {
-    position: relative;
     &__base {
-        position: absolute;
+        position: relative;
         @include state($widthLess, $heightLess, $colorLess, $radiusLess);
     }
 }

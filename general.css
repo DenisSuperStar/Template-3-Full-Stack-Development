@@ -11,7 +11,6 @@ body {
   border: 1px solid transparent;
 }
 
-/*Стили, после рефакторинга, относятся ко всей странице*/
 .page__content {
   padding-left: 50px;
 }
@@ -22,10 +21,6 @@ body {
 
 .hat__section-top--point {
   padding-top: 140px;
-}
-
-.hat__clone {
-  position: relative;
 }
 
 .hat__clone-top--point {
@@ -165,6 +160,12 @@ body {
   margin-right: 140px;
 }
 
+.basement__col-11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .basement__col-11--btm {
   margin-bottom: 20px;
 }
@@ -178,19 +179,6 @@ body {
   padding-bottom: 140px;
 }
 
-/*Стили, после рефакторинга, относящиеся ко всей странице*/
-/*Медиа-запросы*/
-/*@media screen and (min-width: 1600px) {
-    .case {
-        &__innerblock {
-            margin-right: auto;
-            margin-left: 167px;
-        }
-        &__boxbtns {
-            margin-right: 140px;
-        }
-    }
-}*/
 @media screen and (min-width: 1904px) {
   .basement__row {
     width: 59.86%;

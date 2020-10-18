@@ -1,11 +1,7 @@
 @charset "UTF-8";
 /*Параметры базового состояния компонента логотип*/
-.logo {
-  position: relative;
-}
-
 .logo__base {
-  position: absolute;
+  position: relative;
   width: 40px;
   height: 40px;
   border: 2px solid #8ba4f9;

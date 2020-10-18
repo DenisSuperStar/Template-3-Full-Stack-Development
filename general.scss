@@ -19,7 +19,6 @@ body {
     border: 1px solid transparent;
 }
 
-/*Стили, после рефакторинга, относятся ко всей странице*/
 .page {
     &__content {
         padding-left: 50px;
@@ -36,7 +35,6 @@ body {
         }
     }
     &__clone {
-        position: relative;
         &-top--point {
             padding-top: 40px;
         }
@@ -75,7 +73,6 @@ body {
 }
 
  /*Пункт-заглушка для последнего списка*/
-
 .clmn {
     &__item.clmn__item-reserve {
         color: transparent;
@@ -135,6 +132,7 @@ body {
         }
     }
     &__col-11 {
+        display: flex;
         &--btm {
             margin-bottom: 20px;
         }
@@ -159,20 +157,7 @@ body {
         }
     }
 }
-/*Стили, после рефакторинга, относящиеся ко всей странице*/
 
-/*Медиа-запросы*/
-/*@media screen and (min-width: 1600px) {
-    .case {
-        &__innerblock {
-            margin-right: auto;
-            margin-left: 167px;
-        }
-        &__boxbtns {
-            margin-right: 140px;
-        }
-    }
-}*/
 @media screen and (min-width: 1904px) {
     .basement {
         &__row {
