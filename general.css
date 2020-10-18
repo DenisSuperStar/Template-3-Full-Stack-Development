@@ -117,6 +117,12 @@ body {
   margin-right: auto;
 }
 
+.main__attribs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /*Стили футера*/
 .social__box, .basement__socialbox, .basement__social--icons {
   width: 100px;
