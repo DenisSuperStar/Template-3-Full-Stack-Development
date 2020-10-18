@@ -1,0 +1,54 @@
+/*Параметры большего внутреннего элемента логотипа*/
+$widthStrong: 11.76px;
+$heightStrong: 11.76px;
+$halfRadiusStrong: 0 100px 500px 100px;
+$colorStrong: #8ba4f9;
+$rotateStrong: rotate(-70deg);
+$toTopStrong: 15.29px;
+$toLeftStrong: 7.4px;
+
+/*Параметры меньшего внутреннего элемента логотипа*/
+$widthWeak: 9.12px;
+$heightWeak: 9.12px;
+$halfRadiusWeak: 0 100px 100px 0;
+$colorWeak: #66d2ea;
+$rotateWeak: rotate(240deg);
+$toTopWeak: 14px;
+$toLeftWeak: 20px;
+
+@mixin innerlog($width, $height, $radius, $color, $rotate, $fromTop, $fromLeft) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    border-right: 2px solid $color;
+    transform: $rotate;
+    margin-top: $fromTop;
+    margin-left: $fromLeft;
+}
+
+.wing {
+    &-large {
+        @include innerlog(
+            $widthStrong,
+            $heightStrong,
+            $halfRadiusStrong,
+            $colorStrong,
+            $rotateStrong,
+            $toTopStrong,
+            $toLeftStrong
+        );
+    }
+    &-small {
+        @include innerlog(
+            $widthWeak,
+            $heightWeak,
+            $halfRadiusWeak,
+            $colorWeak,
+            $rotateWeak,
+            $toTopWeak,
+            $toLeftWeak 
+        );
+        position: absolute;
+        top: 0;
+    }
+}
