@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": ";AAEA,wBAAwB;AACxB,AAAA,KAAK,CAAC;ECeF,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CDftB",
+    "sources": [
+        "menu.scss",
+        "../../mixins/mixins.scss"
+    ],
+    "names": [],
+    "file": "menu.css"
+}

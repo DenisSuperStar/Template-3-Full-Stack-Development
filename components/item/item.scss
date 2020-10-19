@@ -1,0 +1,22 @@
+@import '../../mixins/mixins.scss';
+
+$weight_no_active: normal;
+$color_no_active: rgba(31, 32, 65, 0.5);
+
+$weight_active: bold;
+$color_active: rgba(31, 32, 65, 0.75);
+
+/*Компонент link, его необязательно вкладывать в компонент url*/
+.link {
+    display: inline-block;
+    height: 18px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    &-no--active {
+        @include link($weight_no_active, $color_no_active);
+    }
+    &-active {
+        @include link($weight_active, $color_active);
+    }
+}

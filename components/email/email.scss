@@ -1,0 +1,17 @@
+@import '../../mixins/mixins.scss';
+
+.email {
+    width: 260px;
+    height: 44px;
+    background: #fff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
