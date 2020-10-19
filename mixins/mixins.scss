@@ -1,0 +1,41 @@
+@mixin gum($min, $max) {
+    min-width: $min;
+    max-width: $max;
+}
+
+@mixin container($width, $height, $back, $shadow) {
+    width: $width;
+    height: $height;
+    background: $back;
+    box-shadow: $shadow;
+}
+
+@mixin catch {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@mixin flexible() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin visual($width, $color, $border, $back) {
+    width: $width;
+    color: $color;
+    border: $border;
+    background: $back;
+}
+
+@mixin link($weight, $color) {
+    font-weight: $weight;
+    color: $color;
+}
