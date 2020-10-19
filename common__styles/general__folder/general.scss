@@ -1,0 +1,171 @@
+@import '../../mixins/mixins.scss';
+
+html {
+    background: #E5E5E5;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Для html*/
+
+/*1) Проверить работоспособность всех тегов без html*/
+/*2) Проверить все поля на переполнение*/
+/*3) Дописать семантическую разметку*/
+/*4) Взять данные у менеджера для SEO: метатег с атрибутами: keywords, description*/
+
+/*Для css*/
+/*2) Прижать футер к низу*/
+/*4) Приписать заданный цвет фона, цвет шрифта, семейство шрифта у html*/
+/*5) Посещенные ссылки :visited, убрать цвет по умолчанию*/
+/*6) Добавить элементу cursor: pointer, который по логике должен быть кликабелен, но у него этого нет*/
+/*7) Для полей ввода для события :focus выставить outline: none, поля ввода располагаются в форме*/
+
+
+.hat {
+    &__wrapper {
+        padding-top: 40px;
+    }
+}
+
+.menu {
+    &__opened {
+        padding-right: 20px; 
+    }
+}
+
+.case {
+    &__inrapper {
+        width: 40px;
+        height: 70px;
+        @include flexible();
+    }
+    &__col-13 {
+        padding-left: 284.31px;
+    }
+    &__col-32 {
+        padding-left: 466.31px;
+    }
+    &__line {
+        padding: 20px; 
+    }
+    &__yourself {
+        @include flexible();
+    }
+}
+
+.page {
+    &__header {
+        padding-top: 140px;
+    }
+    &__main {
+        margin-top: 40px;
+    }
+}
+
+.dropdown-trigger__dropdownbtn {
+    padding: 0;
+    border: none;
+}
+
+.cascade {
+    &__inner {
+        padding-left: 20px;
+        @include flexible();
+    }
+    &__btnbox {
+        padding-right: 20px;
+    }
+}
+
+ /*Пункт-заглушка для последнего списка*/
+.clmn {
+    &__item.clmn__item-reserve {
+        color: transparent;
+    }
+}
+
+.main {
+    &__content {
+        height: 372px;
+        min-width: 72.86rem;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+    }
+    &__col-11 {
+        margin-right: 40px;
+    }
+    &__col-12 {
+        margin-right: 57px;
+    }
+    &__col-13 {
+        margin-right: 92px;
+    }
+    &__col-14 {
+        margin-right: 51px;
+    }
+    &__attribs {
+        display: flex;
+        margin-bottom: 20px;
+    }
+}
+
+/*Стили футера*/
+.social {
+    &__box {
+        width: 100px;
+        @include between();
+    }
+}
+
+/*Класс для расширения других классов*/
+.flexes {
+    @include flexible();
+}
+
+.basement {
+    &__row {
+        min-width: 72.36rem;
+        max-width: 1440px;
+        @include between();
+        margin: 0 auto;
+    }
+    &__socialbox {
+        @extend .social__box;
+    }
+    &__social--icons {
+        @extend .social__box;
+        &-edge {
+            margin-right: 140px;
+        }
+    }
+    &__col-11 {
+        display: flex;
+        &--btm {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__col-12 {
+        @extend .flexes;
+        &--btm {
+            margin-bottom: 25px;
+        }
+    }
+    &__col-13 {
+        @extend .flexes;
+    }
+    &__square {
+        &-centered {
+            @extend .flexes;
+        }
+        &-straight--sides {
+            padding-top: 40px;
+            padding-bottom: 140px;
+        }
+    }
+}
