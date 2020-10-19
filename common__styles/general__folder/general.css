@@ -1,0 +1,204 @@
+@charset "UTF-8";
+html {
+  background: #E5E5E5;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Для html*/
+/*1) Проверить работоспособность всех тегов без html*/
+/*2) Проверить все поля на переполнение*/
+/*3) Дописать семантическую разметку*/
+/*4) Взять данные у менеджера для SEO: метатег с атрибутами: keywords, description*/
+/*Для css*/
+/*2) Прижать футер к низу*/
+/*4) Приписать заданный цвет фона, цвет шрифта, семейство шрифта у html*/
+/*5) Посещенные ссылки :visited, убрать цвет по умолчанию*/
+/*6) Добавить элементу cursor: pointer, который по логике должен быть кликабелен, но у него этого нет*/
+/*7) Для полей ввода для события :focus выставить outline: none, поля ввода располагаются в форме*/
+.hat__wrapper {
+  padding-top: 40px;
+}
+
+.menu__opened {
+  padding-right: 20px;
+}
+
+.case__inrapper {
+  width: 40px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case__col-13 {
+  padding-left: 284.31px;
+}
+
+.case__col-32 {
+  padding-left: 466.31px;
+}
+
+.case__line {
+  padding: 20px;
+}
+
+.case__yourself {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page__header {
+  padding-top: 140px;
+}
+
+.page__main {
+  margin-top: 40px;
+}
+
+.dropdown-trigger__dropdownbtn {
+  padding: 0;
+  border: none;
+}
+
+.cascade__inner {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cascade__btnbox {
+  padding-right: 20px;
+}
+
+/*Пункт-заглушка для последнего списка*/
+.clmn__item.clmn__item-reserve {
+  color: transparent;
+}
+
+.main__content {
+  height: 372px;
+  min-width: 72.86rem;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.main__col-11 {
+  margin-right: 40px;
+}
+
+.main__col-12 {
+  margin-right: 57px;
+}
+
+.main__col-13 {
+  margin-right: 92px;
+}
+
+.main__col-14 {
+  margin-right: 51px;
+}
+
+.main__attribs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/*Стили футера*/
+.social__box, .basement__socialbox, .basement__social--icons {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*Класс для расширения других классов*/
+.flexes, .basement__col-12, .basement__col-13, .basement__square-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basement__row {
+  min-width: 72.36rem;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.basement__social--icons-edge {
+  margin-right: 140px;
+}
+
+.basement__col-11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.basement__col-11--btm {
+  margin-bottom: 20px;
+}
+
+.basement__col-12--btm {
+  margin-bottom: 25px;
+}
+
+.basement__square-straight--sides {
+  padding-top: 40px;
+  padding-bottom: 140px;
+}
+/*# sourceMappingURL=general.css.map */

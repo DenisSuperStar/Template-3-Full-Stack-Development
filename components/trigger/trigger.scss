@@ -1,0 +1,7 @@
+/*Компонент внутрення-область раскрывающегося списка*/
+.dropdown-trigger {
+    display: flex;
+    &:hover + .dropdown-menu {
+        display: block;
+    }
+}

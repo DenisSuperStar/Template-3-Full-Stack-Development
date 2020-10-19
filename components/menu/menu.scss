@@ -1,0 +1,6 @@
+@import '../../mixins/mixins.scss';
+
+/*Компонент блока меню*/
+.menu {
+    @include flexible();
+}

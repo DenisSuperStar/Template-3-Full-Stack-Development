@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*Компонент внутрення-область раскрывающегося списка*/
+.dropdown-trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dropdown-trigger:hover + .dropdown-menu {
+  display: block;
+}
+/*# sourceMappingURL=trigger.css.map */
