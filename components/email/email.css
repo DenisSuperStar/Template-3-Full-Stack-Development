@@ -1,3 +1,11 @@
+input[type="email" i] {
+  padding: 12px 0 12px 15px;
+}
+
+input[type="email" i]:focus {
+  padding: 12px 0 12px 15px;
+}
+
 .email {
   width: 260px;
   height: 44px;
@@ -7,11 +15,13 @@
           box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   border-radius: 4px;
-  padding-top: 12px;
-  padding-left: 15px;
-  padding-bottom: 8px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  cursor: pointer;
+}
+
+.email:focus {
+  outline: none;
 }
 /*# sourceMappingURL=email.css.map */

@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.has__no-shadow, .button-small.is-focused:not(:active), .button-small:focus:not(:active), .button-large.is-focused:not(:active), .button-large:focus:not(:active) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /*Компонент Кнопка*/
 .button {
   height: 34px;
@@ -18,11 +23,31 @@
   background: #fff;
 }
 
+.button-small.is-hovered, .button-small:hover {
+  border: 2px solid #8ba4f9;
+  color: #8ba4f9;
+}
+
+.button-small.is-focused, .button-small:focus {
+  border: 2px solid #8ba4f9;
+  color: #8ba4f9;
+}
+
 .button-large {
   width: 196px;
   color: #fff;
   border: none;
   background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+
+.button-large.is-hovered, .button-large:hover {
+  border: none;
+  color: #fff;
+}
+
+.button-large.is-focused, .button-large:focus {
+  border: none;
+  color: #fff;
 }
 /*# sourceMappingURL=button.css.map */

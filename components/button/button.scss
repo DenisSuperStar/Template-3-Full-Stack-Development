@@ -10,6 +10,21 @@ $color_large: #fff;
 $border_large: none;
 $back_large: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 
+.has__no-shadow {
+    box-shadow: none;
+}
+
+$small_border_focus: 2px solid #8ba4f9;
+$small_color_focus: #8ba4f9;
+
+$large_border_focus: none;
+$large_color_focus: #fff;
+
+@mixin btn-action($border_focus, $color_focus) {
+    border: $border_focus;
+    color: $color_focus;
+}
+
 /*Компонент Кнопка*/
 .button {
     height: 34px;
@@ -22,8 +37,32 @@ $back_large: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     line-height: 15px;
     &-small {
         @include visual($width_small, $color_small, $border_small, $back_small);
+        &.is-hovered,
+        &:hover {
+            @include btn-action($small_border_focus, $small_color_focus);
+        }
+        &.is-focused:not(:active),
+        &:focus:not(:active) {
+            @extend .has__no-shadow;
+        }
+        &.is-focused,
+        &:focus {
+            @include btn-action($small_border_focus, $small_color_focus);
+        }
     }
     &-large {
         @include visual($width_large, $color_large, $border_large, $back_large);
+        &.is-hovered,
+        &:hover {
+            @include btn-action($large_border_focus, $large_color_focus);
+        }
+        &.is-focused:not(:active),
+        &:focus:not(:active) {
+            @extend .has__no-shadow;
+        }
+        &.is-focused,
+        &:focus {
+            @include btn-action($large_border_focus, $large_color_focus);
+        }
     }
 }
