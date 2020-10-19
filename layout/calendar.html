@@ -1,0 +1,339 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Кодировка -->
+        <meta charset="utf-8">
+        <!-- Дополнительно -->
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <!-- Заголовок -->
+        <title>Description page</title>
+        <!-- Подклчение стилей фреймворка bulma -->
+        <link                   
+                rel="stylesheet"  
+                href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+                integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+                crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <!-- Подключение шрифта на веб-странице -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <!-- Стили веб-страницы -->
+        <link rel="stylesheet" href="../common__styles/general__folder/general.css">
+        <!-- Подключение компонентов -->
+        <!-- Компонент шапка -->
+        <link rel="stylesheet" href="../components/header/header.css">
+        <!-- Компонент секции-контейнера, содержит другие вложенные элементы-->
+        <link rel="stylesheet" href="../components/container/container.css">
+        <!-- Компнент текстовый-контейнер -->
+        <link rel="stylesheet" href="../components/company/company.css">
+        <!-- Компонент логотип -->
+        <link rel="stylesheet" href="../components/logo/logo.css">
+        <!-- Компонент внутренний элемент логотипа -->
+        <link rel="stylesheet" href="../components/wing/wing.css">
+        <!-- Компонент-слоган -->
+        <link rel="stylesheet" href="../components/title/title.css">
+        <!-- Компонент блока меню -->
+        <link rel="stylesheet" href="../components/menu/menu.css">
+        <!-- Компонент контейнер для ссылки -->
+        <link rel="stylesheet" href="../components/url/url.css">
+        <!-- Компонент ссылка -->
+        <link rel="stylesheet" href="../components/item/item.css">
+        <!-- Компонент раскрывающийся список -->
+        <link rel="stylesheet" href="../components/dropdown/dropdown.css">
+        <!-- Компонент внутрення област раскрывающегося списка -->
+        <link rel="stylesheet" href="../components/trigger/trigger.css">
+        <!-- Компонент центрирующая внутрення область -->
+        <link rel="stylesheet" href="../components/in/in.css">
+        <!-- Иконка верхнего меню -->
+        <link rel="stylesheet" href="../components/icon/icon.css">
+        <!-- Пункт выпадающего подменю -->
+        <link rel="stylesheet" href="../components/dropdown__item/dropdown__item.css">
+        <!-- Компонент-контейнер, содержащий в себе кнопки -->
+        <link rel="stylesheet" href="../components/cascade/cascade.css">
+        <!-- Компонент кнопка -->
+        <link rel="stylesheet" href="../components/button/button.css">
+        <!-- Компонент линия -->
+        <link rel="stylesheet" href="../components/line/line.css">
+        <!-- Компонент полное имя -->
+        <link rel="stylesheet" href="../components/name/name.css">
+        <!-- Компонент рабочая область -->
+        <link rel="stylesheet" href="../components/main/main.css">
+        <!-- Компонент поле с описанием -->
+        <link rel="stylesheet" href="../components/description/description.css">
+        <!-- Компонент список -->
+        <link rel="stylesheet" href="../components/list/list.css">
+        <!-- Компонент формы -->
+        <link rel="stylesheet" href="../components/form/form.css">
+        <!-- Компонент ввода эл.почты -->
+        <link rel="stylesheet" href="../components/email/email.css">
+        <!-- Компонент для отправки эл.почты -->
+        <link rel="stylesheet" href="../components/icon__action/icon__action.css">
+        <!-- Компонент подвал -->
+        <link rel="stylesheet" href="../components/footer/footer.css">
+        <!-- Компонент копирайт -->
+        <link rel="stylesheet" href="../components/copyright/copyright.css">
+        <!-- Компонент иконка соц сети -->
+        <link rel="stylesheet" href="../components/social__icon/social__icon.css">
+        <body class="page">
+            <header class="page__header hat">
+                <section class="hat__section">
+                    <div class="hat__case case">
+                        <div class="case__col-11">
+                            <div class="case__inrapper logo">
+                                <div class="logo__base">
+                                        <div class="logo__elem wing wing-large"></div>
+                                        <div class="logo__elem wing wing-small"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case__col-12">
+                            <div class="case__company company">
+                                <div class="company__logotext logotext">Toxin</div>
+                            </div>
+                        </div>
+                        <div class="case__col-13">
+                            <nav class="case__menu menu">
+                                <span class="menu__url url">
+                                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="url__link link link-no--active link-active">О нас</a>
+                                </span>
+                                <div class="menu__opened">
+                                    <div class="menu__dropdown dropdown">
+                                        <div class="dropdown__dropdow-trigger dropdown-trigger">
+                                            <div class="dropdown-trigger__dropdownbtn" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                <div class="dropdown-trigger__in in">
+                                                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="in__link link link-no--active">Услуги</a>
+                                                    <span class="in__icon icon"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__dropdown-menu dropdown-menu" id="dropdown-menu" role="menu">
+                                            <div class="dropdown-menu__dropdown-content dropdown-content">
+                                                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Услуга 1</a>
+                                                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Услуга 2</a>
+                                                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Услуга 3</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="menu__url url">
+                                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="url__link link link-no--active">Вакансии</a>
+                                </span>
+                                <span class="menu__url url">
+                                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="url__link link link-no--active">Новости</a>
+                                </span>
+                                <div class="menu__dropdown dropdown">
+                                    <div class="dropdown__dropdown-trigger dropdown-trigger">
+                                        <div class="dropdown-trigger__dropdownbtn" aria-haspopup="true" aria-controls="dropdown-menu">
+                                            <div class="dropdown-trigger__in in">
+                                                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="in__link link link-no--active">Соглашения</a>
+                                                <span class="in__icon icon"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__dropdown-menu dropdown-menu" id="dropdown-menu" role="menu">
+                                        <div class="dropdown-menu__dropdown-content dropdown-content">
+                                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Соглашение 1</a>
+                                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Соглашение 2</a>
+                                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Соглашение 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav> 
+                        </div>
+                        <div class="case__col-14">
+                            <div class="case__cascade cascade">
+                                <div class="cascade__inner">
+                                    <div class="cascade__btnbox">
+                                        <button class="cascade__button button button-small">Войти</button>
+                                    </div>
+                                    <button class="cascade__button button button-large">Зарегистрироваться</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="hat__clone">
+                    <div class="hat__wrapper">
+                        <div class="hat__case-clone case">
+                            <div class="case__col-21">
+                                <div class="case__inrapper logo">
+                                    <div class="logo__base">
+                                        <div class="logo__elem wing wing-large"></div>
+                                        <div class="logo__elem wing wing-small"></div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="case__col-22">
+                                <div class="case__company company">
+                                    <div class="company__logotext logotext">Toxin</div>
+                                </div>
+                            </div>
+                            <div class="case__col-32">
+                                <nav class="case__menu menu">
+                                    <span class="menu__url url">
+                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="url__link link link-no--active link-active">О нас</a>
+                                    </span>
+                                    <div class="menu__opened">
+                                        <div class="menu__dropdown dropdown">
+                                            <div class="dropdown__dropdow-trigger dropdown-trigger">
+                                                <div class="dropdown-trigger__dropdownbtn" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                    <div class="dropdown-trigger__in in">
+                                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="in__link link link-no--active">Услуги</a>
+                                                        <span class="in__icon icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown__dropdown-menu dropdown-menu" id="dropdown-menu" role="menu">
+                                                <div class="dropdown-menu__dropdown-content dropdown-content">
+                                                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Услуга 1</a>
+                                                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Услуга 2</a>
+                                                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Услуга 3</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="menu__url url">
+                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="url__link link link-no--active">Вакансии</a>
+                                    </span>
+                                    <span class="menu__url url">
+                                        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="url__link link link-no--active">Новости</a>
+                                    </span>
+                                    <div class="menu__dropdown dropdown">
+                                        <div class="dropdown__dropdown-trigger dropdown-trigger">
+                                            <div class="dropdown-trigger__dropdownbtn" aria-haspopup="true" aria-controls="dropdown-menu">
+                                                <div class="dropdown-trigger__in in">
+                                                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="in__link link link-no--active">Соглашения</a>
+                                                    <span class="in__icon icon"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__dropdown-menu dropdown-menu" id="dropdown-menu" role="menu">
+                                            <div class="dropdown-menu__dropdown-content dropdown-content">
+                                                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Соглашение 1</a>
+                                                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Соглашение 2</a>
+                                                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="dropdown-content__dropdown-item dropdown-item">Соглашение 3</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="case__col-42">
+                                <div class="case__line">
+                                    <div class="case__elem line"></div>
+                                </div>
+                            </div>  
+                            <div class="col__col-52">
+                                <div class="case__yourself">
+                                    <div class="case__name name">Юлий Цезарь</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </header>
+            <main class="page__main main">
+                <article class="main__content">
+                    <div class="main__col-11">
+                        <div class="main__attribs">
+                            <div class="main__inrapper logo">
+                                <div class="logo__base">
+                                    <div class="logo__elem wing wing-large"></div>
+                                    <div class="logo__elem wing wing-small"></div>
+                                </div>
+                            </div> 
+                            <div class="main__company company">
+                                <div class="company__logotext logotext">Toxin</div>
+                            </div>
+                        </div>
+                        <div class="main__description description">
+                            Бронирование номеров в лучшем отеле 2019 года по версии accоциации "Отдельные взгляды"
+                        </div>
+                    </div>
+                    <aside class="main__col-12">
+                        <ul class="clmn__list list">
+                            <li class="clmn__item list__item list__item-no--active list__item-active list__item-free">Навигация</li>
+                            <li class="clmn__item list__item list__item-no--active list__item-free">О нас</li>
+                            <li class="clmn__item list__item list__item-no--active list__item-free">Новости</li>
+                            <li class="clmn__item list__item list__item-no--active list__item-free">Служба поддержки</li>
+                            <li class="clmn__item list__item list__item-no--active">Услуги</li>
+                        </ul>
+                    </aside>
+                    <aside class="main__col-13">
+                        <ul class="clmn__list list">
+                            <li class="clmn__item list__item list__item-no--active list__item-active list__item-free">О нас</li>
+                            <li class="clmn__item list__item list__item-no--active list__item-free">О сервисе</li>
+                            <li class="clmn__item list__item list__item-no--active list__item-free">Наша команда</li>
+                            <li class="clmn__item list__item list__item-no--active list__item-free">Вакансии</li>
+                            <li class="clmn__item list__item list__item-no--active">Инвесторы</li>
+                        </ul>
+                    </aside>
+                    <aside class="main__col-14">
+                        <ul class="clmn__list list">
+                            <li class="clmn__item list__item list__item-no--active list__item-active list__item-free">Служба поддержки</li>
+                            <li class="clmn__item list__item list__item-no--active list__item-free">Соглашения</li>
+                            <li class="clmn__item list__item list__item-no--active list__item-free">Сообщества</li>
+                            <li class="clmn__item list__item list__item-no--active list__item-free">Связь с нами</li>
+                            <li class="clmn__item clmn__item-reserve list__item list__item-no--active">Резерв</li>
+                        </ul>
+                    </aside>
+                    <div class="main__col-15">
+                        <ul class="clmn__list list">
+                            <li class="clmn__item list__item list__item-no--active list__item-active list__item-free">Подписка</li>
+                            <li class="clmn__item list__item list__item-no--active list__item-free list__item-specific">
+                                Получайте специальные предложения и новости сервиса
+                            </li>
+                        </ul>
+                        <form class="main__form form">
+                            <input class="form__email email" type="email" placeholder="Email">
+                            <span class="form__icon icon-action"></span>
+                        </form>
+                    </div>
+                </article>
+            </main>
+            <footer class="page__footer basement">
+                <section class="basement__rectangle">
+                    <div class="basement__case case">
+                        <div class="basement__row">
+                            <div class="basement__col-11">
+                                <div class="basement__copyright copyright">Copyright &#169; 2018 Toxin отель. Все права защищены</div>
+                            </div>
+                            <div class="basement__col-12">
+                                <div class="basement__socialbox">
+                                    <div class="basement__tw social-icon social-icon--tw"></div>
+                                    <div class="basement__fb social-icon social-icon--fb"></div>
+                                    <div class="basement__ins social-icon social-icon--ins"></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="basement__square basement__square-centered basement__square-straight--sides">
+                    <div class="basement__case case case-vertical case-little">
+                        <div class="basement__col-11 basement__col-11--btm">
+                            <div class="basement__inrapper logo">
+                                <div class="logo__base">
+                                    <div class="logo__elem wing wing-large"></div>
+                                    <div class="logo__elem wing wing-small"></div>
+                                </div>
+                            </div>
+                            <div class="basement__company company">
+                                <div class="company__logotext logotext">Toxin</div>
+                            </div>
+                        </div>
+                        <div class="basement__col-12 basement__col-12--btm">
+                            <div class="basement__copyright copyright">Copyright &#169; 2018 Toxin отель. Все права защищены</div>
+                        </div>
+                        <div class="basement__col-13">
+                            <div class="basement__socialbox">
+                                <div class="basement__tw social-icon social-icon--tw"></div>
+                                <div class="basement__fb social-icon social-icon--fb"></div>
+                                <div class="basement__ins social-icon social-icon--ins"></div> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+        </body>
+    </head>
+</html>
