@@ -1,8 +1,0 @@
-@import '../../mixins/mixins.scss';
-
-$min_width: 1440px;
-$max_width: 100%;
-
-.basement {
-    @include gum($min_width, $max_width);
-}
