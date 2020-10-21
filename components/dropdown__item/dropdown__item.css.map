@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,cAAc,CAAC;EACX,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,qBAAqB;CAC/B",
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,qBAAqB;CAC/B",
     "sources": [
-        "dropdown__item.scss",
-        "../../mixins/mixins.scss"
+        "dropdown__item.scss"
     ],
     "names": [],
     "file": "dropdown__item.css"

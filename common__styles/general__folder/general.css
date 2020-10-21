@@ -8,11 +8,10 @@ body {
 }
 
 /*Для html*/
-/*2) Проверить все поля на переполнение*/
+/*2) Придумать для всех полей какое-нибудь решение на js, которое бы обрезало текст*/
 /*4) Взять данные у менеджера для SEO: метатег с атрибутами: keywords, description*/
 /*Для css*/
 /*2) Прижать футер к низу*/
-/*5) Посещенные ссылки :visited, убрать цвет по умолчанию*/
 .hat__wrapper {
   padding-top: 40px;
 }
@@ -90,7 +89,7 @@ body {
 }
 
 /*Пункт-заглушка для последнего списка*/
-.clmn__item.clmn__item-reserve {
+.list-reserve.list__item {
   color: transparent;
 }
 
@@ -133,7 +132,7 @@ body {
 }
 
 /*Стили футера*/
-.social__box, .basement__socialbox, .basement__social--icons {
+.social__box, .case__socialbox {
   width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +146,7 @@ body {
 }
 
 /*Класс для расширения других классов*/
-.flexes, .basement__col-12, .basement__col-13, .basement__square-centered {
+.flexes, .basement__square-centered, .case__col-12, .case__col-13 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,7 +158,12 @@ body {
           align-items: center;
 }
 
-.basement__row {
+.basement__square-straight--sides {
+  padding-top: 40px;
+  padding-bottom: 140px;
+}
+
+.case__row {
   min-width: 72.36rem;
   max-width: 1440px;
   display: -webkit-box;
@@ -174,26 +178,21 @@ body {
   margin: 0 auto;
 }
 
-.basement__social--icons-edge {
-  margin-right: 140px;
-}
-
-.basement__col-11 {
+.case__col-11 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.basement__col-11--btm {
+.case__col-11--btm {
   margin-bottom: 20px;
 }
 
-.basement__col-12--btm {
+.case__col-12--btm {
   margin-bottom: 25px;
 }
 
-.basement__square-straight--sides {
-  padding-top: 40px;
-  padding-bottom: 140px;
+.case__col-13--last {
+  padding: 0;
 }
 /*# sourceMappingURL=general.css.map */

@@ -6,6 +6,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
+  cursor: pointer;
 }
 
 .link-no--active {
@@ -16,5 +17,14 @@
 .link-active {
   font-weight: bold;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.link:hover {
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.link:focus {
+  outline: none;
 }
 /*# sourceMappingURL=item.css.map */

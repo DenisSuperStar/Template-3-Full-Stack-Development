@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": ";AAEA,wBAAwB;AACxB,AAAA,KAAK,CAAC;ECeF,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CDftB",
+    "mappings": ";AAEA,wBAAwB;AACxB,AAAA,KAAK,CAAC;ECgBF,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CDhBtB",
     "sources": [
         "menu.scss",
         "../../mixins/mixins.scss"

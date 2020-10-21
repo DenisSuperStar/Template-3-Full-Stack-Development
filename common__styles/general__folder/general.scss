@@ -10,12 +10,11 @@ body {
 
 /*Для html*/
 
-/*2) Проверить все поля на переполнение*/
+/*2) Придумать для всех полей какое-нибудь решение на js, которое бы обрезало текст*/
 /*4) Взять данные у менеджера для SEO: метатег с атрибутами: keywords, description*/
 
 /*Для css*/
 /*2) Прижать футер к низу*/
-/*5) Посещенные ссылки :visited, убрать цвет по умолчанию*/
 
 .hat {
     &__wrapper {
@@ -74,8 +73,8 @@ body {
 }
 
  /*Пункт-заглушка для последнего списка*/
-.clmn {
-    &__item.clmn__item-reserve {
+.list {
+    &-reserve.list__item {
         color: transparent;
     }
 }
@@ -122,37 +121,6 @@ body {
 }
 
 .basement {
-    &__row {
-        min-width: 72.36rem;
-        max-width: 1440px;
-        @include between();
-        margin: 0 auto;
-    }
-    &__socialbox {
-        @extend .social__box;
-    }
-    &__social--icons {
-        @extend .social__box;
-        &-edge {
-            margin-right: 140px;
-        }
-    }
-    &__col-11 {
-        display: flex;
-        &--btm {
-            margin-bottom: 20px;
-        }
-    }
-
-    &__col-12 {
-        @extend .flexes;
-        &--btm {
-            margin-bottom: 25px;
-        }
-    }
-    &__col-13 {
-        @extend .flexes;
-    }
     &__square {
         &-centered {
             @extend .flexes;
@@ -161,5 +129,35 @@ body {
             padding-top: 40px;
             padding-bottom: 140px;
         }
+    }
+}
+
+.case {
+    &__row {
+        min-width: 72.36rem;
+        max-width: 1440px;
+        @include between();
+        margin: 0 auto; 
+    }
+    &__col-11 {
+        display: flex;
+        &--btm {
+            margin-bottom: 20px;
+        }
+    }
+    &__col-12 {
+        @extend .flexes;
+        &--btm {
+            margin-bottom: 25px;
+        } 
+    }
+    &__col-13 {
+        @extend .flexes;
+        &--last {
+            padding: 0;
+        }
+    }
+    &__socialbox {
+        @extend .social__box;
     }
 }

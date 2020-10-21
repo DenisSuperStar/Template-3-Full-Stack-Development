@@ -1,12 +1,11 @@
 @import '../../mixins/mixins.scss';
 
-$colorTitle: #1f2041;
-$colorUpper: uppercase;
+$color_title: #1f2041;
+$color_upper: uppercase;
 
 .logotext {
-    color: $colorTitle;
-    text-transform: $colorUpper;
+    color: $color_title;
+    text-transform: $color_upper;
     @include flexible();
     padding-top: 1px;
-    overflow: hidden; 
 }
